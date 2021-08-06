@@ -1,0 +1,217 @@
+/*--------------------------------------
+|	             GENERAL			   |
+----------------------------------------*/
+* {
+	-webkit-font-smoothing: antialiased; /* Safari */
+	-moz-osx-font-smoothing: grayscale; /* Safari */
+	box-sizing:border-box;
+}
+
+body{
+	background-color: rgb(243, 236, 236);
+	cursor: default;
+	background-image: url("immagini/cornice_dx.png"), url("immagini/cornice_sx.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left center, right center;
+	background-attachment: fixed;
+	font-family: Verdana, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(211, 187, 187);
+}
+
+h1{
+    text-align: center;
+	font-family: Georgia, serif;
+}
+
+th{
+	text-align: center;
+	padding: 20px 20px;
+	border: 1px solid black;
+}
+
+td{
+	text-align: center;
+	padding: 5px 5px;
+	border: 1px solid black;
+}
+
+/*--------------------------------------
+|	             NAVBAR				   |
+----------------------------------------*/
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px); /* Safari */
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	opacity: 0.8;
+	z-index: 1;
+}
+ul:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+li {
+ 	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 18px;
+}
+li a:hover {
+	transition: 1s;
+	background-color: #111;
+	filter: blur(0px);
+	-webkit-filter: blur(0px); /* Safari */
+}
+
+/*--------------------------------------
+|	          FOTO PROFILO			   |
+----------------------------------------*/
+#imageGallery{
+	margin: 8px;
+	box-shadow:  0 4px 8px 0 #333, 0 6px 20px 0 #333; 
+	border-radius: 25px;
+	position: relative;
+	width: 400px;
+	max-width: 100%;
+	height: auto;
+	transition: 1s;
+}
+#imageGallery:hover{
+	transition: 1s;
+	transform: scale(1.1); 
+}
+#nome{
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px lightcyan;
+	font-size: 35px;
+	font-family: cursive;
+	color: rgb(44, 41, 41);
+	padding: 12px 5px;
+	transition: 2s;
+}
+/*#nome:hover{
+}*/
+/*--------------------------------------
+|	              Titles			   |
+----------------------------------------*/
+/*#title{
+}*/
+
+#who{
+  	margin-top: 150px;
+}
+#work{
+  	margin-top: 150px;
+}
+#skills{
+  	margin-top: 150px;
+}
+#study{
+  	margin-top: 150px;
+}
+#social{
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+#social_logo{
+	transition: 1s;
+	opacity: 0.8;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+#social_logo:hover{
+	transition: 1s;
+	opacity: 1;
+	transform: scale(1.1);
+}
+/*--------------------------------------
+|	             skills bar			   |
+----------------------------------------*/
+.container{
+	width: 80%;
+	background-color: #ddd;
+	border: 1px solid black;
+	margin: auto; /*to center a div*/
+}
+.skills {
+	text-align: right; /* Right-align text */
+	padding-top: 10px; /* Add top padding */
+	padding-bottom: 10px; /* Add bottom padding */
+	color: white; /* White text color */
+}
+.Cpp {width: 75%; background-color: #04AA6D;}
+.C {width: 50%; background-color: #04AA6D;}
+.CS {width: 60%; background-color: #04AA6D;}
+.HTML {width: 90%; background-color: #04AA6D;}
+.CSS {width: 75%; background-color: #04AA6D;}
+.JavaScript {width: 30%; background-color: #04AA6D;}
+.Photoshop {width: 50%; background-color: #04AA6D;}
+.VideoEditing {width: 65%; background-color: #04AA6D;}
+.MusicCreating {width: 40%; background-color: #04AA6D;}
+.Java {width: 65%; background-color: #04AA6D;}
+
+#divHidden{
+	display: none;
+  	background-color: rgb(223, 223, 54);
+  	padding: 20px;
+}
+p:hover #divHidden{
+	display: block;
+}
+
+/*--------------------------------------
+|	              Footer			   |
+----------------------------------------*/
+#footer{
+	height: 100px;	
+	bottom: 0px;
+	width: 100%;
+	background-color: #333;
+	opacity: 0.9;
+	color: white;
+	transition: 2s;
+	filter: blur(1px);
+	-webkit-filter: blur(1px); /* Safari */
+	text-align: center;
+	position: static;
+}
+#footer:hover{
+	transition: 2s;
+	opacity: 1;
+	filter: blur(0px);
+	-webkit-filter: blur(0px); /* Safari */
+}
+
+/*--------------------------------------
+|	   Visualizzazione da telefono	   |
+----------------------------------------*/
+@media only screen and (max-width: 620px) {
+	/* For mobile phones: */
+	ul, li, #footer, table{
+	  	width: 100%;
+	  	position: static;
+	}
+	li a{
+	  	padding: 2px, 2px;
+	}
+	#footer{
+	  	filter: blur(0px);
+	}
+}

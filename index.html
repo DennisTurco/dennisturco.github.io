@@ -7,195 +7,21 @@
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dennis Turco</title>
-<link href="./lbl_html_blog_files/icon" rel="">
-<style>
-	
-/*--------------------------------------
-|	             GENERAL			   |
-----------------------------------------*/
-* {
-  	-webkit-font-smoothing: antialiased; /* Safari */
-  	-moz-osx-font-smoothing: grayscale; /* Safari */
-}
+<link rel="stylesheet" href="stylesheet/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--<link rel="stylesheet" href="stylesheet/bootstrap.min.css">--> <!--incorporo bootstrap-->
 
-body{
-	background-color: rgb(243, 236, 236);
-	cursor: default;
-	background-image: url("immagini/cornice_dx.png"), url("immagini/cornice_sx.png");
-	background-repeat: no-repeat, no-repeat;
-	background-position: left center, right center;
-	background-attachment: fixed;
-  	
-}
-
-a{
-	text-decoration: none;
-	color: rgb(211, 187, 187);
-}
-
-h1{
-	text-align: center;
-}
-
-th{
-	text-align: center;
-	padding: 20px 20px;
-	border: 1px solid black;
-}
-
-td{
-	text-align: center;
-	padding: 5px 5px;
-	border: 1px solid black;
-}
-
-/*--------------------------------------
-|	             NAVBAR				   |
-----------------------------------------*/
-ul {
-	width: 100%;
-  	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: sticky;
-	border-radius: 6px;
-	filter: blur(0.5px);
-	-webkit-filter: blur(0.5px); /* Safari */
-	position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-	opacity: 0.8;
-	z-index: 1;
-}
-li {
-	float: left;
-
-}
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 16px 18px;
-	text-decoration: none;
-}
-li a:hover {
-	transition: 1s;
-	background-color: #111;
-	filter: blur(0px);
-	-webkit-filter: blur(0px); /* Safari */
-}
-
-/*--------------------------------------
-|	          FOTO PROFILO			   |
-----------------------------------------*/
-#imageGallery{
-	margin: 8px;
-	box-shadow:  0 4px 8px 0 #333, 0 6px 20px 0 #333; 
-	border-radius: 25px;
-	position: relative;
-	width: 400px;
-	max-width: 100%;
-  	height: auto;
-	transition: 1s;
-}
-#imageGallery:hover{
-	transition: 1s;
-	transform: scale(1.1); 
-}
-#nome{
-	margin: 0px;
-	text-align: center;
-	text-shadow: 1px 1px lightcyan;
-	font-size: 35px;
-	font-family: cursive;
-	color: rgb(44, 41, 41);
-	padding: 12px 5px;
-	transition: 2s;
-}
-/*#nome:hover{
-}*/
-/*--------------------------------------
-|	              Titles			   |
-----------------------------------------*/
-/*#title{
-}*/
-
-#who{
-	margin-top: 150px;
-}
-#work{
-	margin-top: 150px;
-}
-#skills{
-	margin-top: 150px;
-}
-#study{
-	margin-top: 150px;
-}
-#social{
-	margin-top: 150px;
-	margin-bottom: 100px;
-}
-#social_logo{
-	transition: 1s;
-	opacity: 0.8;
-	position: relative;
-	max-width: 100%;
-	width: 80px;
-  	height: auto;
-}
-#social_logo:hover{
-	transition: 1s;
-	opacity: 1;
-	transform: scale(1.1);
-}
-
-/*--------------------------------------
-|	              Footer			   |
-----------------------------------------*/
-#footer{
-	height: 100px;	
-	bottom: 0px;
-	width: 100%;
-	background-color: #333;
-	opacity: 0.9;
-	color: white;
-	transition: 2s;
-	filter: blur(1px);
-	-webkit-filter: blur(1px); /* Safari */
-	text-align: center;
-	position: static;
-}
-#footer:hover{
-	transition: 2s;
-	opacity: 1;
-	filter: blur(0px);
-	-webkit-filter: blur(0px); /* Safari */
-}
-
-/*--------------------------------------
-|	   Visualizzazione da telefono	   |
-----------------------------------------*/
-@media only screen and (max-width: 620px) {
-  	/* For mobile phones: */
-  	ul, li, #imgageGallery, #footer, table, img{
-    	width: 100%;
-  	}
-}
-</style>
 </head>
 
 <body id="home">
 <ul>
-	<li><a href="#home">Home</a></li>
-	<li><a href="#who">Chi Sono</a></li>
-	<li><a href="#work">Carriera</a></li>
-	<li><a href="#skills">Abilità</a></li>
-	<li style = "float: right;"><a href="#contact">Contattami</a></li>
-	<li><a href="#study">Percorso di studio</a></li>
-	<li><a href="#social">Social</a></li>
+	<li><a href="#home"><i class="material-icons" title="home">home</i></a></li>
+	<li><a href="#who"><i class="material-icons" title="chi sono">fingerprint</i></a></li>
+	<li><a href="#work"><i class="material-icons" title="carriera">work</i></a></li>
+	<li><a href="#skills"><i class="material-icons" title="abilità">leaderboard</i></a></li>
+	<li style = "float: right;"><a href="contactme.html"><i class="material-icons" title="contattami">email</i></a></li>
+	<li><a href="#study"><i class="material-icons" title="Percorso di studio">school</i></a></li>
+	<li><a href="#social"><i class="material-icons" title="Social">person</i></a></li>
 </ul>
 
 
@@ -203,9 +29,9 @@ li a:hover {
 
 
 <div id="who">
-	<h1>Chi Sono?</h1>
+	<h1><i class="material-icons" title="chi sono">fingerprint</i> Chi Sono?</h1>
 	<p style="text-align:center; margin-left: 10%; margin-right: 10%; font-family: 'Comic Sans ms';">
-		Ciao a tutti e benvenuti nella mia Web Page!<br>
+		Ciao e benvenuto/a nella mia Web Page!<br>
 		Sono Dennis Turco, nato il giorno 08/04/2001 a Fidenza (una piccola città in proviancia di Parma), dove sono residente.<br>
 		Vado all'Università di Parma nella facoltà di Informatica al secondo anno.<br>
 		Sono una persona con tanti hobby e passioni a cui piace sperimentare cose nuove e che ha vogli di imparare, amo inoltre, il lavoro di gruppo,
@@ -219,12 +45,12 @@ li a:hover {
 </div>
 
 <div id="work">
-<h1 id="title">Carriera</h1>
+	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
 </div>
 
 <div id="skills">
-	<h1>Abilità</h1>
-	<table align="center" style="border: 1px solid black; width: 90%; background-color: #111;">
+	<h1> <i class="material-icons" title="abilità">leaderboard</i> Skills</h1>
+	<!--<table align="center" style="border: 1px solid black; width: 90%; background-color: #111;">
 	<tr style="background-color: antiquewhite;">
 		<th>Linguaggio</th>
 		<th>Base</th>
@@ -285,20 +111,96 @@ li a:hover {
 		<td>❌</td>
 		<td>❌</td>
 	</tr>
-	</table>
+	</table>-->
+
+	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Programming Skills</strong></center><p></p>
+	<strong style="margin-left: 10%;">C++</strong>
+	<div class="container">
+		<div class="skills Cpp">75%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">C</strong>
+	<div class="container">
+		<div class="skills C">50%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">CS</strong>
+	<div class="container">
+		<div class="skills CS">60%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">Java</strong>
+	<div class="container">
+		<div class="skills Java">65%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">HTML</strong>
+	<div class="container">
+		<div class="skills HTML">90%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">CSS</strong>
+	<div class="container">
+		<div class="skills CSS">75%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+	
+	<strong style="margin-left: 10%;">JavaScript</strong>
+	<div class="container">
+		<div class="skills JavaScript">30%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Other Skills</strong></center><p></p>
+	<strong style="margin-left: 10%;">Photoshop</strong>
+	<div class="container">
+		<div class="skills Photoshop">50%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">Video Editing</strong>
+	<div class="container">
+		<div class="skills VideoEditing">65%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">Music Creating</strong>
+	<div class="container">
+		<div class="skills MusicCreating">40%</div>
+	</div>
+
+	<p style="text-align: center;"> -> Per Maggiori Informazioni <- </p>
+	<div id="divHidden">Le percentuali delle skills sono soggettive, inquanto non certificate</div>
+
 </div>
 
+
 <div id="study">
-	<h1>Percorso di Studio</h1>
+	<h1> <i class="material-icons" title="Percorso di studio">school</i> Percorso di Studio</h1>
 </div>
 
 <div id="social">
-	<h1>Social</h1>
+	<h1> <i class="material-icons" title="Social">person</i> Social</h1>
 	<table align="center">
 	<tr style="border: none;">
-		<td style="border: none;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png"></a></td>
-		<td style="border: none;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png"></a></td>
-		<td style="border: none;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png"></a></td>
+		<td style="border: none; width: 80px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png" width="70px"></a></td>
+		<td style="border: none; width: 80px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png" width="90px"></a></td>
+		<td style="border: none; width: 80px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png" width="60px"></a></td>
+
 	</tr>
 	</table>
 </div>
@@ -306,7 +208,7 @@ li a:hover {
 
 <div id="footer">
 <p>@Dennis Turco</p>
-Tel: +39 3421666192   |   Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
+<i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
 </div>
 
 </body>
