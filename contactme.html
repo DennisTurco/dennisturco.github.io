@@ -8,43 +8,49 @@
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="stylesheet/bootstrap.min.css"> <!--incorporo bootstrap-->
 <title>Dennis Turco</title>
 
 
 </head>
-
+<body>
 <ul>
-	<li><a href="index.html"><i class="material-icons">home</i></a></li>
-	<li><a href="index.html">Chi Sono</a></li>
-	<li><a href="index.html">Carriera</a></li>
-	<li><a href="index.html">Abilità</a></li>
-	<li style = "float: right;"><a href="contactme.html">Contattami</a></li>
-	<li><a href="index.html">Percorso di studio</a></li>
-	<li><a href="index.html">Social</a></li>
+	<div><li><a href="index.html"><i class="material-icons" title="home">home</i></a></li></div>
+	<div id="fingerprint"><li><a href="#who_link"><i class="material-icons" title="chi sono">fingerprint</i></a></li></div>
+	<div><li><a href="#work_link"><i class="material-icons" title="carriera">work</i></a></li></div>
+	<div><li><a href="#skills_link"><i class="material-icons" title="abilità">leaderboard</i></a></li></div>
+	<div><li style = "float: right;"><a href="contactme.html"><i class="material-icons" title="contattami">email</i></a></li></div>
+	<div id="school"><li><a href="#study_link"><i class="material-icons" title="Percorso di studio">school</i></a></li></div>
+	<div><li><a href="#social_link"><i class="material-icons" title="Social">person</i></a></li></div>
 </ul>
 
 
-<body>
-
-    <div style="text-align: center; margin-top: 200px; font-family: comic sans ms; font-size: 30px; color: #555;">
+    <p style="text-align: center; margin-top: 50px; font-size: 30px; color: #555;">
         <strong>Inviami Un Messaggio</strong>
-    </div>
-    <div style="width: 400px; height: 550px; background-color: #cfcccc; border: 1px solid black; margin-top: 20px; margin:auto;">
-        <p>Nome</p>
+    </p>
+    <div id="messaggio">
+        <p style="margin-left: 20px;">Nome</p>
         <input type="text">
-        <p>Cognome</p>
+        <p style="margin-left: 20px;">Cognome</p>
         <input type="text">
-        <p>Oggetto</p>
+        <p style="margin-left: 20px;">Oggetto</p>
         <input type="text">
-        <p>Messaggio</p>
-        <textarea style="width: 90%;">Testo...</textarea>
+        <p style="margin-left: 20px;">Messaggio</p>
+        <textarea style="width: 90%;" placeholder="Testo..."></textarea>
 
-        <p>Email</p>
-        <input type="text">
-        <p>Password</p>
+        <p style="margin-left: 20px;">Email</p>
+        <input type="email">
+        <p style="margin-left: 20px;">Password</p>
         <input type="password">
-        <p><a href="#"><button>Invia</button></a></p>
+        <p style="text-align: center;"><a href="#"><button><i class="material-icons">send</i> Invia Messaggio</button></a></p>
     </div>
+	
+<div id="footer">
+<div style="height: 2px;"></div>
+<p>@Dennis Turco</p>
+<i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
+<br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
+</div>
 
 </body>
 

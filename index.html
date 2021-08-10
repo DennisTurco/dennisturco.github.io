@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html>
 <head>
 <meta charset="utf-8">
 <meta name="author" content="Dennis Turco">
 <meta name="description" content="Personal Portfolio">
 <meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Serve per la visualizzazione da mobile-->
 <title>Dennis Turco</title>
-<link rel="stylesheet" href="stylesheet/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!--<link rel="stylesheet" href="stylesheet/bootstrap.min.css">--> <!--incorporo bootstrap-->
+<link rel="icon" href="immagini/discord">  <!--Icona della pagina web-->
+<link rel="stylesheet" href="stylesheet/bootstrap.min.css"> <!--incorporo bootstrap-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Script per permettere l'hover on scroll-->
+<link rel="stylesheet" href="stylesheet/style.css">
 
 </head>
 
-<body id="home">
+<body>
 <ul>
-	<li><a href="#home"><i class="material-icons" title="home">home</i></a></li>
-	<li><a href="#who"><i class="material-icons" title="chi sono">fingerprint</i></a></li>
-	<li><a href="#work"><i class="material-icons" title="carriera">work</i></a></li>
-	<li><a href="#skills"><i class="material-icons" title="abilità">leaderboard</i></a></li>
-	<li style = "float: right;"><a href="contactme.html"><i class="material-icons" title="contattami">email</i></a></li>
-	<li><a href="#study"><i class="material-icons" title="Percorso di studio">school</i></a></li>
-	<li><a href="#social"><i class="material-icons" title="Social">person</i></a></li>
+	<div><li><a href="index.html"><i class="material-icons" title="home">home</i></a></li></div>
+	<div id="fingerprint"><li><a href="#who_link"><i class="material-icons" title="chi sono">fingerprint</i></a></li></div>
+	<div><li><a href="#work_link"><i class="material-icons" title="carriera">work</i></a></li></div>
+	<div><li><a href="#skills_link"><i class="material-icons" title="abilità">leaderboard</i></a></li></div>
+	<div><li style = "float: right;"><a href="contactme.html"><i class="material-icons" title="contattami">email</i></a></li></div>
+	<div id="school"><li><a href="#study_link"><i class="material-icons" title="Percorso di studio">school</i></a></li></div>
+	<div><li><a href="#social_link"><i class="material-icons" title="Social">person</i></a></li></div>
 </ul>
 
 
-<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
+<h1 id="nome" style="font-family: ;">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
 
-
-<div id="who">
-	<h1><i class="material-icons" title="chi sono">fingerprint</i> Chi Sono?</h1>
+<span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="who" data-aos="fade-down">
+	<div><h1><i class="material-icons" title="chi sono">fingerprint</i> Chi Sono?</h1></div>
 	<p style="text-align:center; margin-left: 10%; margin-right: 10%; font-family: 'Comic Sans ms';">
 		Ciao e benvenuto/a nella mia Web Page!<br>
 		Sono Dennis Turco, nato il giorno 08/04/2001 a Fidenza (una piccola città in proviancia di Parma), dove sono residente.<br>
@@ -44,75 +45,16 @@
 	</p>
 </div>
 
-<div id="work">
+<span id="work_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="work" data-aos="fade-down">
 	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
+	
+	
 </div>
 
-<div id="skills">
+<span id="skills_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="skills" data-aos="fade-down">
 	<h1> <i class="material-icons" title="abilità">leaderboard</i> Skills</h1>
-	<!--<table align="center" style="border: 1px solid black; width: 90%; background-color: #111;">
-	<tr style="background-color: antiquewhite;">
-		<th>Linguaggio</th>
-		<th>Base</th>
-		<th>Intermedio</th>
-		<th>Esperto</th>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>C++</td>
-		<td>✔️</td>
-		<td>✔️</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: antiquewhite;">
-		<td>C</td>
-		<td>✔️</td>
-		<td>❌</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>C#</td>
-		<td>✔️</td>
-		<td>✔️</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: antiquewhite;">
-		<td>Java</td>
-		<td>✔️</td>
-		<td>✔️</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>HTML</td>
-		<td>✔️</td>
-		<td>✔️</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: antiquewhite;">
-		<td>CSS</td>
-		<td>✔️</td>
-		<td>✔️</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>JavaScript</td>
-		<td>✔️</td>
-		<td>❌</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>Photoshop</td>
-		<td>✔️</td>
-		<td>❌</td>
-		<td>❌</td>
-	</tr>
-	<tr style="background-color: rgb(235, 210, 178);">
-		<td>Video Editing</td>
-		<td>✔️</td>
-		<td>❌</td>
-		<td>❌</td>
-	</tr>
-	</table>-->
-
 	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Programming Skills</strong></center><p></p>
 	<strong style="margin-left: 10%;">C++</strong>
 	<div class="container">
@@ -180,36 +122,56 @@
 
 	<strong style="margin-left: 10%;">Music Creating</strong>
 	<div class="container">
-		<div class="skills MusicCreating">40%</div>
+		<div class="skills MusicCreating">25%</div>
 	</div>
 
-	<p style="text-align: center;"> -> Per Maggiori Informazioni <- </p>
+	<p id="showinfo"> -> Per Maggiori Informazioni <- </p>
 	<div id="divHidden">Le percentuali delle skills sono soggettive, inquanto non certificate</div>
 
 </div>
 
-
-<div id="study">
+<span id="study_link"></span><!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="study" data-aos="fade-down">
 	<h1> <i class="material-icons" title="Percorso di studio">school</i> Percorso di Studio</h1>
+	
+		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità</strong></center><p></p>
+
+		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esami Universitari</strong></center><p></p>
+		<p style="margin-left: 10%;">
+			• Architettura degli Elaboratori<br>
+			• Analisi 1<br>
+			• Fondamenti di Programmazione A e B<br>
+			• Algebra e Geometria<br>
+			• Fisica Generale<br>
+		</p>
 </div>
 
-<div id="social">
+<span id="social_link"></span><!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="social" data-aos="fade-down">
 	<h1> <i class="material-icons" title="Social">person</i> Social</h1>
 	<table align="center">
 	<tr style="border: none;">
-		<td style="border: none; width: 80px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png" width="70px"></a></td>
-		<td style="border: none; width: 80px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png" width="90px"></a></td>
-		<td style="border: none; width: 80px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png" width="60px"></a></td>
-
+		<td style="border: none; width: 80px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png"></a></td>
+		<td style="border: none; width: 90px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png"></a></td>
+		<td style="border: none; width: 70px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png"></a></td>
 	</tr>
 	</table>
 </div>
 
 
 <div id="footer">
+<div style="height: 2px;"></div>
 <p>@Dennis Turco</p>
 <i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
+<br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
 </div>
+
+
+<!--Script per permettere l'hover on scroll-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

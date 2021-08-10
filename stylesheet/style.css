@@ -4,17 +4,16 @@
 * {
 	-webkit-font-smoothing: antialiased; /* Safari */
 	-moz-osx-font-smoothing: grayscale; /* Safari */
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 
 body{
-	background-color: rgb(243, 236, 236);
+	background-color: white;
 	cursor: default;
 	background-image: url("immagini/cornice_dx.png"), url("immagini/cornice_sx.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position: left center, right center;
 	background-attachment: fixed;
-	font-family: Verdana, sans-serif;
 }
 
 a{
@@ -24,6 +23,10 @@ a{
 
 h1{
     text-align: center;
+	font-family: Georgia, serif;
+}
+strong{
+	text-align: center;
 	font-family: Georgia, serif;
 }
 
@@ -55,12 +58,16 @@ ul {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: 1;
+	transition: 0.5s;
 }
 ul:hover{
 	opacity: 1;
 	transition: 0.5s;
+	filter: blur(0px);
+	-webkit-filter: blur(0px); /* Safari */
+	
 }
 li {
  	float: left;
@@ -85,49 +92,83 @@ li a:hover {
 	margin: 8px;
 	box-shadow:  0 4px 8px 0 #333, 0 6px 20px 0 #333; 
 	border-radius: 25px;
-	position: relative;
-	width: 400px;
+	width: 350px;
 	max-width: 100%;
 	height: auto;
 	transition: 1s;
-}
-#imageGallery:hover{
-	transition: 1s;
-	transform: scale(1.1); 
+	
+	animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1; /*indica quante volte va eseguita l'animation*/
+    animation-fill-mode: forwards;
 }
 #nome{
-	margin: 0px;
-	text-align: center;
-	text-shadow: 1px 1px lightcyan;
-	font-size: 35px;
-	font-family: cursive;
-	color: rgb(44, 41, 41);
-	padding: 12px 5px;
-	transition: 2s;
+	animation: TitleAnimation ease 3s;
+    animation-iteration-count: 1; /*indica quante volte va eseguita l'animation*/
+    animation-fill-mode: forwards;
+	margin-top: 50px;
+	font-family: Georgia;
+
 }
-/*#nome:hover{
-}*/
+
+#l1:hover{
+	animation: shake ease 3s;
+	transform               : rotateY(360deg);
+	-moz-transform          : rotateY(360deg);
+	-webkit-transform       : rotateY(360deg);
+	transform-origin        : center;
+	-moz-transform-origin   : center;
+	-webkit-transform-origin: center;
+	transition: 1s;
+}
+
+@keyframes TitleAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+		transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+		transform: scale(1);
+     }
+}
 /*--------------------------------------
 |	              Titles			   |
 ----------------------------------------*/
-/*#title{
-}*/
-
 #who{
-  	margin-top: 150px;
+  	margin-top: 100px;
 }
 #work{
-  	margin-top: 150px;
+  	margin-top: 100px;
 }
 #skills{
-  	margin-top: 150px;
+  	margin-top: 100px;
 }
 #study{
-  	margin-top: 150px;
+  	margin-top: 100px;
 }
 #social{
-	margin-top: 150px;
-	margin-bottom: 100px;
+	margin-top: 100px;
 }
 #social_logo{
 	transition: 1s;
@@ -152,27 +193,33 @@ li a:hover {
 }
 .skills {
 	text-align: right; /* Right-align text */
-	padding-top: 10px; /* Add top padding */
-	padding-bottom: 10px; /* Add bottom padding */
+	padding-top: 2px; /* Add top padding */
+	padding-bottom: 2px; /* Add bottom padding */
 	color: white; /* White text color */
 }
-.Cpp {width: 75%; background-color: #04AA6D;}
-.C {width: 50%; background-color: #04AA6D;}
-.CS {width: 60%; background-color: #04AA6D;}
-.HTML {width: 90%; background-color: #04AA6D;}
-.CSS {width: 75%; background-color: #04AA6D;}
-.JavaScript {width: 30%; background-color: #04AA6D;}
-.Photoshop {width: 50%; background-color: #04AA6D;}
-.VideoEditing {width: 65%; background-color: #04AA6D;}
-.MusicCreating {width: 40%; background-color: #04AA6D;}
-.Java {width: 65%; background-color: #04AA6D;}
+.Cpp {width: 75%; background-color: #31b83d;}
+.C {width: 50%; background-color: rgb(194, 224, 25);}
+.CS {width: 60%; background-color: #28cf36;}
+.HTML {width: 90%; background-color: #00a135;}
+.CSS {width: 75%; background-color: #31b83d;}
+.JavaScript {width: 30%; background-color: rgb(216, 132, 22);}
+.Photoshop {width: 50%; background-color: rgb(194, 224, 25);}
+.VideoEditing {width: 65%; background-color: #28cf36;}
+.MusicCreating {width: 25%; background-color: rgb(216, 132, 22);}
+.Java {width: 65%; background-color: #28cf36;}
 
+#showinfo{
+	text-align: center;
+}
+#divHidden{
+	text-align: center;
+	transition: 1s;
+}
 #divHidden{
 	display: none;
-  	background-color: rgb(223, 223, 54);
-  	padding: 20px;
 }
-p:hover #divHidden{
+#showinfo:hover + #divHidden{
+	transition: 1s;
 	display: block;
 }
 
@@ -180,17 +227,18 @@ p:hover #divHidden{
 |	              Footer			   |
 ----------------------------------------*/
 #footer{
-	height: 100px;	
+	height: 130px;	
 	bottom: 0px;
 	width: 100%;
 	background-color: #333;
 	opacity: 0.9;
 	color: white;
 	transition: 2s;
-	filter: blur(1px);
-	-webkit-filter: blur(1px); /* Safari */
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px); /* Safari */
 	text-align: center;
 	position: static;
+	margin-top: 50px;
 }
 #footer:hover{
 	transition: 2s;
@@ -204,7 +252,7 @@ p:hover #divHidden{
 ----------------------------------------*/
 @media only screen and (max-width: 620px) {
 	/* For mobile phones: */
-	ul, li, #footer, table{
+	#footer, table{
 	  	width: 100%;
 	  	position: static;
 	}
@@ -213,5 +261,26 @@ p:hover #divHidden{
 	}
 	#footer{
 	  	filter: blur(0px);
+	}
+	#imageGallery{
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 436px) {
+	/* For mobile phones: */
+	#fingerprint{
+		display: none;
+	}
+	#imageGallery{
+		width: 220px;
+	}
+}
+@media only screen and (max-width: 376px) {
+	/* For mobile phones: */
+	#school{
+		display: none;
+	}
+	#imageGallery{
+		width: 200px;
 	}
 }
