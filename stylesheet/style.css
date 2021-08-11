@@ -8,12 +8,9 @@
 }
 
 body{
-	background-color: white;
 	cursor: default;
-	background-image: url("immagini/cornice_dx.png"), url("immagini/cornice_sx.png");
-	background-repeat: no-repeat, no-repeat;
-	background-position: left center, right center;
-	background-attachment: fixed;
+	background-color: white;
+  	color: black;
 }
 
 a{
@@ -30,17 +27,6 @@ strong{
 	font-family: Georgia, serif;
 }
 
-th{
-	text-align: center;
-	padding: 20px 20px;
-	border: 1px solid black;
-}
-
-td{
-	text-align: center;
-	padding: 5px 5px;
-	border: 1px solid black;
-}
 
 /*--------------------------------------
 |	             NAVBAR				   |
@@ -105,7 +91,7 @@ li a:hover {
 	animation: TitleAnimation ease 3s;
     animation-iteration-count: 1; /*indica quante volte va eseguita l'animation*/
     animation-fill-mode: forwards;
-	margin-top: 50px;
+	margin-top: 200px;
 	font-family: Georgia;
 
 }
@@ -156,19 +142,19 @@ li a:hover {
 |	              Titles			   |
 ----------------------------------------*/
 #who{
-  	margin-top: 100px;
+  	margin-top: 500px;
 }
 #work{
-  	margin-top: 100px;
+  	margin-top: 500px;
 }
 #skills{
-  	margin-top: 100px;
+  	margin-top: 500px;
 }
 #study{
-  	margin-top: 100px;
+  	margin-top: 500px;
 }
 #social{
-	margin-top: 100px;
+	margin-top: 500px;
 }
 #social_logo{
 	transition: 1s;
@@ -197,16 +183,98 @@ li a:hover {
 	padding-bottom: 2px; /* Add bottom padding */
 	color: white; /* White text color */
 }
-.Cpp {width: 75%; background-color: #31b83d;}
-.C {width: 50%; background-color: rgb(194, 224, 25);}
-.CS {width: 60%; background-color: #28cf36;}
-.HTML {width: 90%; background-color: #00a135;}
-.CSS {width: 75%; background-color: #31b83d;}
-.JavaScript {width: 30%; background-color: rgb(216, 132, 22);}
-.Photoshop {width: 50%; background-color: rgb(194, 224, 25);}
-.VideoEditing {width: 65%; background-color: #28cf36;}
-.MusicCreating {width: 25%; background-color: rgb(216, 132, 22);}
-.Java {width: 65%; background-color: #28cf36;}
+
+.Cpp {animation: loadcpp ease 4s; width: 75%; background-color: #31b83d}
+.C { animation: loadc ease 4s; width: 50%; background-color: rgb(194, 224, 25);}
+.CS {animation: loadcs ease 4s; width: 60%; background-color: #28cf36;}
+.HTML  {animation: loadhtml ease 4s; width: 90%; background-color: #00a135;}
+.CSS {animation: loadcss ease 4s; width: 75%; background-color: #31b83d;}
+.JavaScript {animation: loadjavascript ease 4s; width: 30%; background-color: rgb(216, 132, 22);}
+.Photoshop {animation: loadphotoshop ease 4s; width: 50%; background-color: rgb(194, 224, 25);}
+.VideoEditing {animation: loadvideoediting ease 4s;width: 65%; background-color: #28cf36;}
+.MusicCreating {animation: loadmusiccreating ease 4s; width: 25%; background-color: rgb(216, 132, 22);}
+.Java {animation: loadjava ease 4s; width: 65%; background-color: #28cf36;}
+@keyframes loadcpp{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 75%; background-color: #31b83d;
+	}
+}
+@keyframes loadc{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 50%; background-color: rgb(194, 224, 25);
+	}
+}
+@keyframes loadcs{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 60%; background-color: #28cf36;
+	}
+}
+@keyframes loadhtml{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 90%; background-color: #00a135;
+	}
+}
+@keyframes loadcss{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 75%; background-color: #31b83d;
+	}
+}
+@keyframes loadjavascript{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 30%; background-color: rgb(216, 132, 22);
+	}
+}
+@keyframes loadphotoshop{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 50%; background-color: rgb(194, 224, 25);
+	}
+}
+@keyframes loadvideoediting{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 65%; background-color: #28cf36;
+	}
+}
+@keyframes loadmusiccreating{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 25%; background-color: rgb(216, 132, 22);
+	}
+}
+@keyframes loadjava{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 65%; background-color: #28cf36;
+	}
+}
+
 
 #showinfo{
 	text-align: center;
@@ -221,6 +289,112 @@ li a:hover {
 #showinfo:hover + #divHidden{
 	transition: 1s;
 	display: block;
+}
+
+/*--------------------------------------
+|	            Torna su			   |
+----------------------------------------*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	opacity: 0.8;
+	height: 50px;
+}
+  
+#myBtn:hover {
+	opacity: 1;
+	background-color: #555;
+}
+
+/*--------------------------------------
+|	            change mode			   |
+----------------------------------------*/
+.setting {
+	position: fixed;
+  	bottom: 20px;
+  	left: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	opacity: 0.8;
+	height: 50px;
+}
+.setting:hover{
+	opacity: 1;
+	background-color: #555;
+}
+
+.setting:focus {
+	background-color: #222;
+}
+
+.setting-content {
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	left: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	padding: 15px;
+	border-radius: 4px;
+	height: 180px;
+	width: 200px;
+}
+
+.setting-content table {
+	display: block;
+}
+
+.setting :hover {background-color: #ddd;}
+
+.show {display: block;}
+
+#thememode{
+	position: fixed;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgb(39, 39, 39);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	opacity: 0.8;
+	height: 50px;
+}
+#thememode:hover{
+	opacity: 1;
+}
+
+.dark-mode {
+	background-color: rgb(19, 18, 18);
+	color: white;
+}
+.light-mode {
+	background-color: white;
+	color: black;
 }
 
 /*--------------------------------------

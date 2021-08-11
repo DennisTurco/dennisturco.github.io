@@ -7,16 +7,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Serve per la visualizzazione da mobile-->
 <title>Dennis Turco</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="icon" href="immagini/discord">  <!--Icona della pagina web-->
+<link rel="icon" href="immagini/icona.ico">  <!--Icona della pagina web-->
 <link rel="stylesheet" href="stylesheet/bootstrap.min.css"> <!--incorporo bootstrap-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Script per permettere l'hover on scroll-->
 <link rel="stylesheet" href="stylesheet/style.css">
-
 </head>
 
-<body>
+
+<body id="home">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">north</i></button> <!--Torna su-->
+
+<button onclick="myFunction()" class="setting">Settings</button> <!--Bottone in basso a sinistra-->
+<div id="myDropdown" class="setting-content">
+  <table >
+	  <tr>
+		  <td width="70px"></td>
+		  <th width="60px">Tema</th>
+		  <td width="70px"></td>
+	  </tr>
+	  <tr>
+		  <td width="70px"><button onclick="themelightFunction()" id="thememode"><i class="material-icons">light_mode</i></button></td>
+		  <td width="60px"></td>
+		  <td width="70px"><button onclick="themedarkFunction()" id="thememode"><i class="material-icons">dark_mode</i></button></td>
+	  </tr>
+  </table>
+</div>
+</div>
+
 <ul>
-	<div><li><a href="index.html"><i class="material-icons" title="home">home</i></a></li></div>
+	<div><li><a href="#home"><i class="material-icons" title="home">home</i></a></li></div>
 	<div id="fingerprint"><li><a href="#who_link"><i class="material-icons" title="chi sono">fingerprint</i></a></li></div>
 	<div><li><a href="#work_link"><i class="material-icons" title="carriera">work</i></a></li></div>
 	<div><li><a href="#skills_link"><i class="material-icons" title="abilità">leaderboard</i></a></li></div>
@@ -25,8 +45,7 @@
 	<div><li><a href="#social_link"><i class="material-icons" title="Social">person</i></a></li></div>
 </ul>
 
-
-<h1 id="nome" style="font-family: ;">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
+<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
 
 <span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="who" data-aos="fade-down">
@@ -48,7 +67,7 @@
 <span id="work_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="work" data-aos="fade-down">
 	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
-	
+	<p style="text-align: center;"><i class="material-icons">keyboard_arrow_right</i><a href="documenti/curriculum.pdf" target="blank">Curriculum Vitae</a><i class="material-icons">keyboard_arrow_left</i></p>
 	
 </div>
 
@@ -144,6 +163,8 @@
 			• Algebra e Geometria<br>
 			• Fisica Generale<br>
 		</p>
+
+		<p style="text-align: center;"><i class="material-icons">keyboard_arrow_right</i><a href="documenti/diploma.pdf" target="blank">Diploma</a><i class="material-icons">keyboard_arrow_left</i></p>
 </div>
 
 <span id="social_link"></span><!--Utilizzo questo punto come riferimento dalla navbar-->
@@ -151,8 +172,12 @@
 	<h1> <i class="material-icons" title="Social">person</i> Social</h1>
 	<table align="center">
 	<tr style="border: none;">
+		<td style="border: none; width: 70px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img id="social_logo" src="immagini/skype.png"></a></td>
+		<td width="10px"></td>
 		<td style="border: none; width: 80px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png"></a></td>
+		<td width="5px"></td>
 		<td style="border: none; width: 90px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png"></a></td>
+		<td width="5px"></td>
 		<td style="border: none; width: 70px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png"></a></td>
 	</tr>
 	</table>
@@ -175,3 +200,60 @@
 
 </body>
 </html>
+
+
+<!--Top Script-->
+<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 1000px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
+</script>
+
+	<!--Settings Script-->
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	if (!event.target.matches('.setting')) {
+		var dropdowns = document.getElementsByClassName("setting-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		}
+		}
+	}
+	}
+
+	function themedarkFunction() {
+	   var element = document.body;
+	   element.classList.toggle("dark-mode");
+	}
+	
+	function themelightFunction() {
+	   var element = document.body;
+	   element.classList.toggle("light-mode");
+	}
+</script>
