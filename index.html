@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="author" content="Dennis Turco">
@@ -18,22 +19,31 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">north</i></button> <!--Torna su-->
 
-<button onclick="myFunction()" class="setting">Settings</button> <!--Bottone in basso a sinistra-->
+<button onclick="myFunction()" class="setting">Opzioni</button> <!--Bottone in basso a sinistra-->
 <div id="myDropdown" class="setting-content">
-  <table >
-	  <tr>
-		  <td width="70px"></td>
-		  <th width="60px">Tema</th>
-		  <td width="70px"></td>
-	  </tr>
-	  <tr>
-		  <td width="70px"><button onclick="themelightFunction()" id="thememode"><i class="material-icons">light_mode</i></button></td>
-		  <td width="60px"></td>
-		  <td width="70px"><button onclick="themedarkFunction()" id="thememode"><i class="material-icons">dark_mode</i></button></td>
-	  </tr>
-  </table>
+	<table>
+		<tr>
+			<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Tema</th>	
+		</tr>
+		<tr>
+			<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode1" onclick="themelightFunction()"><i class="material-icons">light_mode</i></button></center></td>
+			<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode2" onclick="themedarkFunction()"><i class="material-icons">dark_mode</i></button></center></td>
+		  </tr>
+		
+		<tr>
+			<td height="20px"></td>
+		</tr>
+		
+		  <tr>
+			<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Lingua</th>
+		</tr>
+		<tr>
+			<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode" onclick="linguaITFunction()" >IT</button></center></td>
+			<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode" onclick="linguaENFunction()" >EN</button></center></td>
+		  </tr>
+	  </table>
 </div>
-</div>
+
 
 <ul>
 	<div><li><a href="#home"><i class="material-icons" title="home">home</i></a></li></div>
@@ -42,11 +52,10 @@
 	<div><li><a href="#skills_link"><i class="material-icons" title="abilità">leaderboard</i></a></li></div>
 	<div><li style = "float: right;"><a href="contactme.html"><i class="material-icons" title="contattami">email</i></a></li></div>
 	<div id="school"><li><a href="#study_link"><i class="material-icons" title="Percorso di studio">school</i></a></li></div>
-	<div><li><a href="#social_link"><i class="material-icons" title="Social">person</i></a></li></div>
 </ul>
 
-<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
 
+<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
 <span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="who" data-aos="fade-down">
 	<div><h1><i class="material-icons" title="chi sono">fingerprint</i> Chi Sono?</h1></div>
@@ -90,8 +99,8 @@
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">CS</strong>
-	<div class="container">
-		<div class="skills CS">60%</div>
+	<div class="container" >
+		<div class="skills CS" placeholder="C++">60%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
@@ -153,43 +162,175 @@
 <div id="study" data-aos="fade-down">
 	<h1> <i class="material-icons" title="Percorso di studio">school</i> Percorso di Studio</h1>
 	
-		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità</strong></center><p></p>
+		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità  </strong> <a href="documenti/diploma.pdf" title="diploma" style="color: red;"><i class="material-icons">file_download</i></a></center><p></p>
+		<!--<center><a href="documenti/diploma.pdf" target="blank" style="color: red;"><i class="material-icons">picture_as_pdf</i> Download</a></center>-->
 
 		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esami Universitari</strong></center><p></p>
-		<p style="margin-left: 10%;">
-			• Architettura degli Elaboratori<br>
-			• Analisi 1<br>
-			• Fondamenti di Programmazione A e B<br>
-			• Algebra e Geometria<br>
-			• Fisica Generale<br>
-		</p>
+		
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')">1&#0176; Anno</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">2&#0176; Anno</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">3&#0176; Anno</button>
+		  </div>
+		  
+		  
+		  <div id="London" class="tabcontent">
+			<table>
+				<tr>
+					<th>Esame</th>
+					<th>Completato</th>
+				</tr>
 
-		<p style="text-align: center;"><i class="material-icons">keyboard_arrow_right</i><a href="documenti/diploma.pdf" target="blank">Diploma</a><i class="material-icons">keyboard_arrow_left</i></p>
+				<tr>
+					<td>Architettura degli Elaboratori</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Fondamenti di Programmazione A</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Analisi 1</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Fisica Generale</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Fondamenti di Programmazione B</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Algebra e Geometria</td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
+				</tr>
+
+				<tr>
+					<td>Algoritmi e Strutture Dati</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+			</table>
+		  </div>
+		  
+		  <div id="Paris" class="tabcontent">
+			<table>
+				<tr>
+					<th>Esame</th>
+					<th>Completato</th>
+				</tr>
+
+				<tr>
+					<td>SISTEMI OPERATIVI</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>SISTEMI INFORMATIVI</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>ELEMENTI DI PROBABILITA'</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>BASI DI DATI</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>CALCOLO NUMERICO</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>FONDAMENTI DELL'INFORMATICA</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>LABORATORIO DI ALGORITMI E STRUTTURE DATI</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>METODOLOGIE DI PROGRAMMAZIONE</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+			</table>
+		  </div>
+		  
+		  <div id="Tokyo" class="tabcontent">
+			<table>
+				<tr>
+					<th>Esame</th>
+					<th>Completato</th>
+				</tr>
+
+				<tr>
+					<td>CHIMICA</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>INGEGNERIA DEL SOFTWARE</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>RETI DI CALCOLATORI</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>SISTEMI INFORMATIVI E GESTIONE D'IMPRESA</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>INTELLIGENZA ARTIFICIALE</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>PROGRAMMAZIONE PARALLELA E HPC</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+
+				<tr>
+					<td>PROVA FINALE</td>
+					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+				</tr>
+			</table>
+		  </div>
+
 </div>
 
-<span id="social_link"></span><!--Utilizzo questo punto come riferimento dalla navbar-->
-<div id="social" data-aos="fade-down">
-	<h1> <i class="material-icons" title="Social">person</i> Social</h1>
-	<table align="center">
-	<tr style="border: none;">
-		<td style="border: none; width: 70px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img id="social_logo" src="immagini/skype.png"></a></td>
-		<td width="10px"></td>
-		<td style="border: none; width: 80px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img id="social_logo" src="immagini/instagram.png"></a></td>
-		<td width="5px"></td>
-		<td style="border: none; width: 90px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img id="social_logo" src="immagini/github.png"></a></td>
-		<td width="5px"></td>
-		<td style="border: none; width: 70px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img id="social_logo" src="immagini/discord.png"></a></td>
-	</tr>
-	</table>
-</div>
 
-
-<div id="footer">
+<footer>
 <div style="height: 2px;"></div>
-<p>@Dennis Turco</p>
+<p>&copy; Dennis Turco</p>
 <i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
 <br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
-</div>
+<table align="center">
+	<tr>
+		<td style="border: none; width: 40px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img src="immagini/skype.png"></a></td>
+		<td width="10px"></td>
+		<td style="border: none; width: 50px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img src="immagini/instagram.png"></a></td>
+		<td width="5px"></td>
+		<td style="border: none; width: 60px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img src="immagini/github.png"></a></td>
+		<td width="5px"></td>
+		<td style="border: none; width: 40px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img src="immagini/discord.png"></a></td>
+	</tr>
+	</table>
+</footer>
 
 
 <!--Script per permettere l'hover on scroll-->
@@ -257,3 +398,20 @@
 	   element.classList.toggle("light-mode");
 	}
 </script>
+
+<!--Esami Universitari-->
+<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
