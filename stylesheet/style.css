@@ -157,10 +157,11 @@ li a:hover {
 /*--------------------------------------
 |	             skills bar			   |
 ----------------------------------------*/
-.container{
-	background-color: #ddd;
-	border: 1px solid black;
+.contenitore{
+	width: 80%; 
+	margin: auto;
 }
+
 .skills {
 	text-align: right; /* Right-align text */
 	font-family: Georgia;
@@ -168,6 +169,8 @@ li a:hover {
 	padding-bottom: 2px; /* Add bottom padding */
 	color: white; /* White text color */
 	padding-right: 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .Cpp {animation: loadcpp ease 4s; width: 75%; background-color: #31b83d}
@@ -259,22 +262,6 @@ li a:hover {
 	100%{
 		width: 65%; background-color: #28cf36;
 	}
-}
-
-
-#showinfo{
-	text-align: center;
-}
-#divHidden{
-	text-align: center;
-	transition: 1s;
-}
-#divHidden{
-	display: none;
-}
-#showinfo:hover + #divHidden{
-	transition: 1s;
-	display: block;
 }
 
 /*--------------------------------------
@@ -438,11 +425,8 @@ li a:hover {
 	color: rgb(49, 42, 78);
 }
 
-.dark-mode {
-	background-color: rgb(42, 42, 42);
-	color: white;
-}
-.light-mode {
+
+.invert-color {
 	background-color: white;
 	color: rgb(42, 42, 42);
 }
@@ -489,7 +473,6 @@ footer img:hover{
 @media only screen and (max-width: 620px) {
 	/* For mobile phones: */
 	footer, table{
-	  	width: 100%;
 	  	position: static;
 	}
 	li a{
@@ -513,7 +496,6 @@ footer img:hover{
 	#imageGallery{
 		width: 220px;
 	}
-
 	.tab, .tabcontent{
 		width: 350px;
 	}
@@ -526,7 +508,6 @@ footer img:hover{
 	#imageGallery{
 		width: 200px;
 	}
-
 	.tab, .tabcontent{
 		width: 300px;
 	}

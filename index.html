@@ -17,32 +17,31 @@
 
 <body id="home">
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">north</i></button> <!--Torna su-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">north</i></button> <!--Torna su-->
 
-<button onclick="myFunction()" class="setting">Opzioni</button> <!--Bottone in basso a sinistra-->
-<div id="myDropdown" class="setting-content">
-	<table>
-		<tr>
-			<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Tema</th>	
-		</tr>
-		<tr>
-			<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode1" onclick="themelightFunction()"><i class="material-icons">light_mode</i></button></center></td>
-			<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode2" onclick="themedarkFunction()"><i class="material-icons">dark_mode</i></button></center></td>
-		  </tr>
-		
-		<tr>
-			<td height="20px"></td>
-		</tr>
-		
-		  <tr>
-			<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Lingua</th>
-		</tr>
-		<tr>
-			<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode" onclick="linguaITFunction()" >IT</button></center></td>
-			<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode" onclick="linguaENFunction()" >EN</button></center></td>
-		  </tr>
-	  </table>
-</div>
+	<button onclick="myFunction()" class="setting">Opzioni</button> <!--Bottone in basso a sinistra-->
+	<div id="myDropdown" class="setting-content">
+		<table>
+			<tr>
+				<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Tema</th>	
+			</tr>
+			<tr>
+				<td colspan="2" style="background-color: #888; width:100px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><center><button id="thememode1" onclick="invertcolorFunction()"><i class="material-icons">invert_colors</i></button></center></td>
+			</tr>
+			
+			<tr>
+				<td height="20px"></td>
+			</tr>
+			
+			  <tr>
+				<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Lingua</th>
+			</tr>
+			<tr>
+				<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode" onclick="linguaITFunction()" >IT</button></center></td>
+				<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode" onclick="linguaENFunction()" >EN</button></center></td>
+			  </tr>
+		  </table>
+	</div>
 
 
 <ul>
@@ -76,7 +75,7 @@
 <span id="work_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="work" data-aos="fade-down">
 	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
-	<p style="text-align: center;"><i class="material-icons">keyboard_arrow_right</i><a href="documenti/curriculum.pdf" target="blank">Curriculum Vitae</a><i class="material-icons">keyboard_arrow_left</i></p>
+	<center><a href="documenti/curriculum.pdf" title="curriculum vitae" target="blank"><i class="material-icons">file_download</i>Curriculum Vitae</a>
 	
 </div>
 
@@ -85,49 +84,49 @@
 	<h1> <i class="material-icons" title="abilità">leaderboard</i> Skills</h1>
 	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Programming Skills</strong></center><p></p>
 	<strong style="margin-left: 10%;">C++</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills Cpp">75%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">C</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills C">50%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">CS</strong>
-	<div class="container" >
-		<div class="skills CS" placeholder="C++">60%</div>
+	<div class="contenitore">
+		<div class="skills CS">60%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">Java</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills Java">65%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">HTML</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills HTML">90%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">CSS</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills CSS">75%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 	
 	<strong style="margin-left: 10%;">JavaScript</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills JavaScript">30%</div>
 	</div>
 
@@ -135,26 +134,25 @@
 
 	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Other Skills</strong></center><p></p>
 	<strong style="margin-left: 10%;">Photoshop</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills Photoshop">50%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">Video Editing</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills VideoEditing">65%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">Music Creating</strong>
-	<div class="container">
+	<div class="contenitore">
 		<div class="skills MusicCreating">25%</div>
 	</div>
 
-	<p id="showinfo"> -> Per Maggiori Informazioni <- </p>
-	<div id="divHidden">Le percentuali delle skills sono soggettive, inquanto non certificate</div>
+	<p style="text-align: center; margin-top: 20px;"><i>"Le percentuali delle skills sono soggettive, inquanto non certificate"</i></p>
 
 </div>
 
@@ -334,84 +332,14 @@
 
 
 <!--Script per permettere l'hover on scroll-->
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script type="text/JavaScript" src="javascript.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--Scroll Down Script-->
+<script>
+	AOS.init();
+</script>
 
 </body>
 </html>
 
 
-<!--Top Script-->
-<script>
-	//Get the button
-	var mybutton = document.getElementById("myBtn");
-
-	// When the user scrolls down 1000px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-	}
-</script>
-
-	<!--Settings Script-->
-	<script>
-	/* When the user clicks on the button, 
-	toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
-	}
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	if (!event.target.matches('.setting')) {
-		var dropdowns = document.getElementsByClassName("setting-content");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-		var openDropdown = dropdowns[i];
-		if (openDropdown.classList.contains('show')) {
-			openDropdown.classList.remove('show');
-		}
-		}
-	}
-	}
-
-	function themedarkFunction() {
-	   var element = document.body;
-	   element.classList.toggle("dark-mode");
-	}
-	
-	function themelightFunction() {
-	   var element = document.body;
-	   element.classList.toggle("light-mode");
-	}
-</script>
-
-<!--Esami Universitari-->
-<script>
-	function openCity(evt, cityName) {
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  document.getElementById(cityName).style.display = "block";
-	  evt.currentTarget.className += " active";
-	}
-	</script>
