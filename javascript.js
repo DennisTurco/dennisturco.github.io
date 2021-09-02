@@ -65,3 +65,5 @@ javascript.js
 	  document.getElementById(cityName).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
+
+
