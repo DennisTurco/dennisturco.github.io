@@ -23,74 +23,60 @@ a{
 h1{
     text-align: center;
 	font-family: Georgia, serif;
-	color: #e06c29;  /* fallback for old browsers */
-	font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
-
 strong{
 	text-align: center;
 	font-family: Georgia, serif;
 }
 
 
-
-
 /*--------------------------------------
 |	             NAVBAR				   |
 ----------------------------------------*/
-#sideNavBar a {
-	position: fixed;
-	left: -120px;
-	transition: 0.3s;
-	padding: 15px;
-	width: 175px;
-	margin-top: 150px;
-	text-decoration: none;
-	font-size: 20px;
+ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px); /* Safari */
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	opacity: 0.9;
+	z-index: 1;
+	transition: 0.5s;
+}
+ul:hover{
+	opacity: 1;
+	transition: 0.5s;
+	filter: blur(0px);
+	-webkit-filter: blur(0px); /* Safari */
+	
+}
+li {
+ 	float: left;
+}
+li a {
+	display: block;
 	color: white;
-	border-radius: 0 5px 5px 0;
-	background: #c31432;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  }
-  
-  #sideNavBar a:hover {
-	left: 0;
-  }
-  
-  #sideNavBar i{
-	float: right;
-  }
-  
-  #home {
-	top: 20px;
-  } 
-  #who {
-	top: 85px;
-  } 
-  #work {
-	top: 150px;
-  }
-  #skills {
-	top: 215px;
-  }
-  #school {
-	top: 280px;
-  }
-
-  #contactme {
-	top: 345px;
-  }  
-
+	text-align: center;
+	padding: 16px 18px;
+}
+li a:hover {
+	transition: 1s;
+	background-color: #111;
+	filter: blur(0px);
+	-webkit-filter: blur(0px); /* Safari */
+}
 
 /*--------------------------------------
 |	          FOTO PROFILO			   |
 ----------------------------------------*/
-
 #imageGallery{
-	margin: 50px 8px 8px 8px;
+	margin: 8px;
 	box-shadow:  0 4px 8px 0 #333, 0 6px 20px 0 #333; 
 	border-radius: 25px;
 	width: 350px;
@@ -106,9 +92,8 @@ strong{
 	animation: TitleAnimation ease 3s;
     animation-iteration-count: 1; /*indica quante volte va eseguita l'animation*/
     animation-fill-mode: forwards;
-	margin-top: 150px;
+	margin-top: 200px;
 	font-family: Georgia;
-	font-size: 72px;
 }
 
 #l1:hover{
@@ -153,7 +138,6 @@ strong{
 		transform: scale(1);
      }
 }
-
 /*--------------------------------------
 |	              Titles			   |
 ----------------------------------------*/
@@ -435,22 +419,25 @@ strong{
 	border-bottom-right-radius: 5px;
 }
 
-.Cpp {animation: loadcpp ease 4s; width: 75%; background-color: #31b83d}
-.C { animation: loadc ease 4s; width: 50%; background-color: rgb(194, 224, 25);}
+.Cpp {animation: loadcpp ease 4s; width: 85%; background-color: #00a135;}
+.C { animation: loadc ease 4s; width: 85%; background-color: #00a135;}
 .CS {animation: loadcs ease 4s; width: 60%; background-color: #28cf36;}
-.HTML  {animation: loadhtml ease 4s; width: 90%; background-color: #00a135;}
-.CSS {animation: loadcss ease 4s; width: 75%; background-color: #31b83d;}
-.JavaScript {animation: loadjavascript ease 4s; width: 30%; background-color: rgb(216, 132, 22);}
+.HTML  {animation: loadhtml ease 4s; width: 80%; background-color: #00a135;}
+.CSS {animation: loadcss ease 4s; width: 65%; background-color: #28cf36;}
+.JavaScript {animation: loadjavascript ease 4s; width: 20%; background-color: rgb(216, 132, 22);}
 .Photoshop {animation: loadphotoshop ease 4s; width: 50%; background-color: rgb(194, 224, 25);}
 .VideoEditing {animation: loadvideoediting ease 4s;width: 65%; background-color: #28cf36;}
 .MusicCreating {animation: loadmusiccreating ease 4s; width: 25%; background-color: rgb(216, 132, 22);}
-.Java {animation: loadjava ease 4s; width: 65%; background-color: #28cf36;}
+.Java {animation: loadjava ease 4s; width: 75%; background-color: #00a135;}
+.AndroidStudio {animation: loadjava ease 4s; width: 70%; background-color: #28cf36;}
+.SQL {animation: loadjava ease 4s; width: 80%; background-color: #00a135;}
+.MATLAB {animation: loadmatlab ease 4s; width: 65%; background-color: #28cf36;}
 @keyframes loadcpp{
 	0%{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
-		width: 75%; background-color: #31b83d;
+		width: 85%; background-color: #31b83d;
 	}
 }
 @keyframes loadc{
@@ -458,7 +445,7 @@ strong{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
-		width: 50%; background-color: rgb(194, 224, 25);
+		width: 85%; background-color: #31b83d;
 	}
 }
 @keyframes loadcs{
@@ -474,7 +461,7 @@ strong{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
-		width: 90%; background-color: #00a135;
+		width: 80%; background-color: #31b83d;
 	}
 }
 @keyframes loadcss{
@@ -482,7 +469,7 @@ strong{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
-		width: 75%; background-color: #31b83d;
+		width: 65%; background-color: #28cf36;
 	}
 }
 @keyframes loadjavascript{
@@ -490,7 +477,7 @@ strong{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
-		width: 30%; background-color: rgb(216, 132, 22);
+		width: 20%; background-color: rgb(216, 132, 22);
 	}
 }
 @keyframes loadphotoshop{
@@ -522,6 +509,33 @@ strong{
 		width: 0%; background-color: #31b83d;
 	}
 	100%{
+		width: 75%; background-color: #28cf36;
+	}
+}
+
+@keyframes loadAndroidStudio{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 70%; background-color: #28cf36;
+	}
+}
+
+@keyframes loadsql{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 80%; background-color: #28cf36;
+	}
+}
+
+@keyframes loadmatlab{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
 		width: 65%; background-color: #28cf36;
 	}
 }
@@ -544,9 +558,8 @@ strong{
 
 .tab {
 	overflow: hidden;
-	border-radius: 10px;
-	border: 3px solid rgb(65, 61, 61);
-	background-color: none;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
 	width: 500px;
 	margin: auto;
 }
@@ -561,8 +574,6 @@ strong{
 	padding: 14px 16px;
 	transition: 0.3s;
 	font-size: 17px;
-	font-weight: 700;
-	color: rgb(190, 114, 114);;
 }
   
   /* Change background color of buttons on hover */
@@ -581,6 +592,7 @@ strong{
 	margin: auto;
 	display: none;
 	padding: 6px 12px;
+	border: 1px solid #ccc;
 	border-top: none;
 }
 
@@ -617,11 +629,13 @@ strong{
 	position: fixed;
   	bottom: 20px;
   	left: 30px;
-	z-index: 0;
+	z-index: 1;
 	font-size: 18px;
 	border: none;
+	outline: none;
 	background-color: #333;
 	color: white;
+	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
 	opacity: 0.8;
@@ -661,7 +675,7 @@ strong{
 
 .show {display: block;}
 
-#thememode, #thememode1{
+#thememode, #thememode1, #thememode2{
 	z-index: 3;
 	font-size: 18px;
 	border: none;
@@ -674,9 +688,17 @@ strong{
 	opacity: 0.8;
 	height: 50px;
 }
-
+#thememode:hover, #thememode1:hover, #thememode2:hover{
+	opacity: 1;
+}
 #thememode1:hover{
 	color: yellow;
+}
+#thememode2:hover{
+	color: rgb(49, 42, 78);
+}
+#thememode2:focus{
+	color: rgb(49, 42, 78);
 }
 
 
@@ -684,6 +706,7 @@ strong{
 	transition: 1s;
 	background-color: white;
 	color: rgb(42, 42, 42);
+	
 }
 
 /*--------------------------------------
@@ -691,12 +714,14 @@ strong{
 ----------------------------------------*/
 footer{
 	height: 180px;	
+	bottom: 0px;
+	width: 100%;
 	background-color: #333;
 	color: white;
 	text-align: center;
+	position: static;
 	margin-top: 300px;
 	z-index: 1;
-	position: relative;
 }
 footer img{
 	transition: 1s;
@@ -710,30 +735,6 @@ footer img:hover{
 	opacity: 1;
 	transform: scale(1.1);
 }
-
-
-/* width */
-::-webkit-scrollbar {
-	width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: #f1f1f1; 
-	border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: #888; 
-	border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: #555;
-	
-  }
 
 
 /*--------------------------------------
@@ -756,6 +757,9 @@ footer img:hover{
 }
 @media only screen and (max-width: 436px) {
 	/* For mobile phones: */
+	#fingerprint{
+		display: none;
+	}
 	#imageGallery{
 		width: 220px;
 	}
@@ -765,6 +769,9 @@ footer img:hover{
 }
 @media only screen and (max-width: 376px) {
 	/* For mobile phones: */
+	#school{
+		display: none;
+	}
 	#imageGallery{
 		width: 200px;
 	}

@@ -1,4 +1,4 @@
-<!--<?php include_once("file.php"); ?>-->
+<?php include 'file.php'; ?>
 
 <html>
 
@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Script per permettere l'hover on scroll-->
 <link rel="stylesheet" href="stylesheet/style.css"/>
 <link rel="stylesheet" href="stylesheet/contact_style.css"/>
-
 
 </head>
 
@@ -47,30 +46,23 @@
 <div id="back"><a href="index.html"><i class="material-icons" title="home" style="font-size: 80px;">arrow_back</i></a></div>
 
 
+<p style="text-align: center; font-size: 30px; margin-top: 50px;">
+    <strong>Inviami Un Messaggio</strong>
+</p>
 
+<form action="" method="POST" id="messaggio" >
+    <label for="nome_input">Nome</label><br/>
+    <input type="text" name="nome_input" id="nome_input" required/><br/>
+    <label for="cognome_input">Cognome</label><br/>
+    <input type="text" name="cognome_input" id="cognome_input" required/><br/>
+    <label for="oggetto_input">Oggetto</label><br/>
+    <input type="text" name="oggetto_input" id="oggetto_input" required/><br/>
+    <label for="messaggio_input">Messaggio</label><br/>
+    <textarea style="resize: none; margin-left: 20px;" placeholder="Testo..." rows="10" cols="40" name="messaggio_input" id="messaggio_input" required></textarea><br/>
+    <p style="text-align: center;">
+    <input type="submit" name="submitButton" value="Invia Messaggio"/></p>
+</form>
 
-<div>
-    <p style="text-align: center; font-size: 30px; margin-top: 50px;">
-        <strong>Inviami Un Messaggio</strong>
-    </p>
-</div>
-
-
-<div>
-    <form action="" method="POST" id="messaggio" >
-        <input type="text" name="nome_input" id="nome_input" placeholder="Nome" required/>
-        <input type="text" name="cognome_input" id="cognome_input" placeholder="Cognome" required/>
-        <input type="text" name="oggetto_input" id="oggetto_input" placeholder="Oggetto" required/><br/>
-        <textarea style="resize: none; margin-left: 20px;" placeholder="Testo..." rows="10" cols="40" name="messaggio_input" id="messaggio_input" required></textarea><br/>
-        <p style="text-align: center;">
-        <input type="submit" name="submitButton" value="Invia Messaggio"/></p>
-    </form>
-</div>
-
-
-
-
-<div style="height: 100px;"></div>
 	
 <footer style="margin-top: 50px;">
     <div style="height: 2px;"></div>

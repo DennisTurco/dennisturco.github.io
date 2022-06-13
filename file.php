@@ -21,4 +21,4 @@ if(isset($_POST['submitButton'])){
     //alet -- conferma invio
     echo '<script>alert("Messaggio Inviato!")</script>';
   }
-?>
+  ?>

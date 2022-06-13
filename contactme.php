@@ -1,28 +1,4 @@
-<!--<?php
-if(isset($_POST['submitButton'])){
-  
-  // the message
-  $msg = "Nome: " . $_POST['nome_input'] . "\n" . "Cognome: " . $_POST['cognome_input'] . "\n\n" . $_POST['messaggio_input'];
-  
-  //object
-  $obj = $_POST['oggetto_input'];
-
-  // use wordwrap() if lines are longer than 70 characters
-  $msg = wordwrap($msg,70);
-	
-  // send email
-  mail("dennisturco@gmail.com", $obj ,$msg);
-  
-  
-  
-  //reindirizzamento
-  header("refresh:0; url=/index.html");
-  
-  //alet -- conferma invio
-  echo '<script>alert("Messaggio Inviato!")</script>';
-}
-?>-->
-
+<?php include 'file.php'; ?>
 
 <html>
 
@@ -90,7 +66,7 @@ if(isset($_POST['submitButton'])){
 	
 <footer style="margin-top: 50px;">
     <div style="height: 2px;"></div>
-    <p>&copy; Dennis Turco</p>
+    <p>&copy; 2021 Dennis Turco</p>
     <i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
     <br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
     <table align="center">

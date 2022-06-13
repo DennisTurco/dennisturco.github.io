@@ -1,6 +1,17 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYX0XE2QG7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NYX0XE2QG7');
+</script>
+
 <meta charset="utf-8"/>
 <meta name="author" content="Dennis Turco"/>
 <meta name="description" content="Personal WebSite"/>
@@ -37,64 +48,46 @@
 				<th colspan="2" style="text-align: center; background-color: #888; width: 200px; border-top-right-radius: 10px; border-top-left-radius: 10px;">Lingua</th>
 			</tr>
 			<tr>
-				<div class="langWrap">
-					<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><a href="#" language="italiano" class="active"><button id="thememode" onclick="linguaITFunction()">IT</button></a></center></td>
-					<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><a href="#" language="inglese"><button id="thememode" onclick="linguaENFunction()">EN</button></a></center></td>
-				</div>
-			</tr>
+				<td style="background-color: #888; width:100px; border-bottom-left-radius: 10px;"><center><button id="thememode" onclick="linguaITFunction()" >IT</button></center></td>
+				<td style="background-color: #888; width:100px; border-bottom-right-radius: 10px;"><center><button id="thememode" onclick="linguaENFunction()" >EN</button></center></td>
+			  </tr>
 		  </table>
 	</div>
 
 
-<div id="sideNavBar">
-	<a href="#home" id="home" title="home">Home<i class="material-icons">home</i></a>
-	<a href="#who" id="who" title="chi sono">About<i class="material-icons">fingerprint</i></a>
-	<a href="#work" id="work" title="carriera">Carriera<i class="material-icons">work</i></a>
-	<a href="#skills" id="skills" title="abilità">Abilità<i class="material-icons">leaderboard</i></a>
-	<a href="#school" id="school" title="Percorso di studio">Scuola<i class="material-icons">school</i></a>
-	<a href="contactme.php" id="contactme" title="contattami">Contattami<i class="material-icons">email</i></a>
-</div>
-
-
-<!--<ul>
+<ul>
 	<div><li><a href="#home"><i class="material-icons" title="home">home</i></a></li></div>
 	<div id="fingerprint"><li><a href="#who_link"><i class="material-icons" title="chi sono">fingerprint</i></a></li></div>
 	<div><li><a href="#work_link"><i class="material-icons" title="carriera">work</i></a></li></div>
 	<div><li><a href="#skills_link"><i class="material-icons" title="abilità">leaderboard</i></a></li></div>
 	<div><li style = "float: right;"><a href="contactme.php"><i class="material-icons" title="contattami">email</i></a></li></div>
 	<div id="school"><li><a href="#study_link"><i class="material-icons" title="Percorso di studio">school</i></a></li></div>
-</ul>-->
-
-
+</ul>
 
 <div id="main">
-	<h1 id="nome">DENNIS TURCO</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
-	</div>
-	
-	<span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
-	<div id="who" data-aos="fade-down" class="center">
-		<div><h1><i class="material-icons" title="chi sono" style="font-size: 40px;">fingerprint</i> CHI SONO?</h1></div>
-		<p style="text-align:center; margin-left: 10%; margin-right: 10%; font-family: 'Comic Sans ms';" class="desciption">
-			Ciao e benvenuto/a nella mia Web Page!<br>
-			Sono Dennis Turco, nato il giorno 08/04/2001 a Fidenza (una piccola città in proviancia di Parma), dove sono residente.<br>
-			Vado all'Università di Parma nella facoltà di Informatica al secondo anno.<br>
-			Sono una persona con tanti hobby e passioni a cui piace sperimentare cose nuove e che ha vogli di imparare, amo inoltre, il lavoro di gruppo,
-			ma so lavorare anche individualmente.<br><br>
-			Dopo questa sintetica introduzione qui sotto, divise per categorie, sono descritte:<br>
-			<i>La mia carriera</i>: Dove potrai visionare quali sono state le mie esperienze lavorative.<br>
-			<i>Le mie abilità</i>: Ti illustrerò dove vado meglio e dove invece ho più lacune.<br>
-			<i>Il mio percorso di studio</i>: Nel quale vedrai tutto quello che c'è da sapere sulle scuole che ho frequentato e gli esami che ho passato.<br>
-			<i>I social dove trovarmi</i>: Dove ti "linkerò" i social in cui sono registrato.<br>
-		</p>
-	</div>
+<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
+</div>
 
-
-	
+<span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
+<div id="who" data-aos="fade-down" class="center">
+	<div><h1><i class="material-icons" title="chi sono">fingerprint</i> Chi Sono?</h1></div>
+	<p style="text-align:center; margin-left: 10%; margin-right: 10%; font-family: 'Comic Sans ms';">
+		Ciao e benvenuto/a nella mia Web Page!<br>
+		Sono Dennis Turco, nato il giorno 08/04/2001 a Fidenza (una piccola città in proviancia di Parma), dove sono residente.<br>
+		Vado all'Università di Parma nella facoltà di Informatica al secondo anno.<br>
+		Sono una persona con tanti hobby e passioni a cui piace sperimentare cose nuove e che ha vogli di imparare, amo inoltre, il lavoro di gruppo,
+		ma so lavorare anche individualmente.<br><br>
+		Dopo questa sintetica introduzione qui sotto, divise per categorie, sono descritte:<br>
+		<i>La mia carriera</i>: Dove potrai visionare quali sono state le mie esperienze lavorative.<br>
+		<i>Le mie abilità</i>: Ti illustrerò dove vado meglio e dove invece ho più lacune.<br>
+		<i>Il mio percorso di studio</i>: Nel quale vedrai tutto quello che c'è da sapere sulle scuole che ho frequentato e gli esami che ho passato.<br>
+		<i>I social dove trovarmi</i>: Dove ti "linkerò" i social in cui sono registrato.<br>
+	</p>
 </div>
 
 <span id="work_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="work" data-aos="fade-down">
-	<h1 id="title"><i class="material-icons" title="carriera" style="font-size: 40px;">work</i>  CARRIERA</h1>
+	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
 	<center><a href="documenti/curriculum.pdf" title="curriculum vitae" target="blank"><i class="material-icons">file_download</i>Curriculum Vitae</a>
 	<div style="height: 50px;"></div>
 	<div class="container">
@@ -126,15 +119,15 @@
 				<div class="date-content">
 					<div class="date-outer">
 						<span class="date">
-								<span class="month" style="font-size: 13px;">Ancora in corso</span>
-						<span class="year">2020</span>
+								<span class="month" style="font-size: 13px;">1 anno e 6 mesi</span>
+						<span class="year">2020/21</span>
 						</span>
 					</div>
 				</div>
 				<div class="timeline-content">
 					<h5 class="title">Fattorino</h5>
 					<p class="description">
-						Lavoro come fattorino per una pizzeria a Fidenza(PR) iniziato nel Luglio 2020 con un contratto a chiamata.
+						Ho lavorato come fattorino per una pizzeria a Fidenza(PR) iniziato nel Luglio 2020 con un contratto a chiamata.
 					</p>
 				</div>
 			</div>
@@ -180,6 +173,26 @@
 			</div>
 			<!-- end experience section-->
 
+			<!-- start experience section-->
+			<div class="timeline">
+				<div class="icon"></div>
+				<div class="date-content">
+					<div class="date-outer">
+						<span class="date">
+								<span class="month">6 mesi</span>
+						<span class="year">2021/22</span>
+						</span>
+					</div>
+				</div>
+				<div class="timeline-content">
+					<h5 class="title">Insegnante Dirigente</h5>
+					<p class="description">
+						Ho lavorato in un'associazione a Fidenza per 6 mesi come part-time da Settembre a Febbraio come insegnante Dirigente di un dopo-scuola.
+					</p>
+				</div>
+			</div>
+			<!-- end experience section-->
+
 
 		</div>
 	</div>
@@ -187,18 +200,18 @@
 
 <span id="skills_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="skills" data-aos="fade-down">
-	<h1> <i class="material-icons" title="abilità" style="font-size: 40px;">leaderboard</i> SKILLS</h1>
+	<h1> <i class="material-icons" title="abilità">leaderboard</i> Skills</h1>
 	<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Programming Skills</strong></center><p></p>
 	<strong style="margin-left: 10%;">C++</strong>
 	<div class="contenitore">
-		<div class="skills Cpp">75%</div>
+		<div class="skills Cpp">85%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">C</strong>
 	<div class="contenitore">
-		<div class="skills C">50%</div>
+		<div class="skills C">85%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
@@ -212,28 +225,49 @@
 
 	<strong style="margin-left: 10%;">Java</strong>
 	<div class="contenitore">
-		<div class="skills Java">65%</div>
+		<div class="skills Java">75%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">HTML</strong>
 	<div class="contenitore">
-		<div class="skills HTML">90%</div>
+		<div class="skills HTML">80%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 
 	<strong style="margin-left: 10%;">CSS</strong>
 	<div class="contenitore">
-		<div class="skills CSS">75%</div>
+		<div class="skills CSS">65%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
 	
 	<strong style="margin-left: 10%;">JavaScript</strong>
 	<div class="contenitore">
-		<div class="skills JavaScript">30%</div>
+		<div class="skills JavaScript">20%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">Android Studio (Java)</strong>
+	<div class="contenitore">
+		<div class="skills AndroidStudio">70%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">SQL</strong>
+	<div class="contenitore">
+		<div class="skills SQL">80%</div>
+	</div>
+
+	<div style="margin-top: 30px;"></div>
+
+	<strong style="margin-left: 10%;">MATLAB</strong>
+	<div class="contenitore">
+		<div class="skills MATLAB">65%</div>
 	</div>
 
 	<div style="margin-top: 30px;"></div>
@@ -264,9 +298,10 @@
 
 <span id="study_link"></span><!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="study" data-aos="fade-down">
-	<h1> <i class="material-icons" title="Percorso di studio" style="font-size: 40px;">school</i> PERCORSO DI STUDIO</h1>
+	<h1> <i class="material-icons" title="Percorso di studio">school</i> Percorso di Studio</h1>
 	
 		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità  </strong> <a href="documenti/diploma.pdf" title="diploma" style="color: red;"><i class="material-icons">file_download</i></a></center><p></p>
+		<!--<center><a href="documenti/diploma.pdf" target="blank" style="color: red;"><i class="material-icons">picture_as_pdf</i> Download</a></center>-->
 
 		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esami Universitari</strong></center><p></p>
 		
@@ -316,7 +351,7 @@
 
 				<tr>
 					<td>Algoritmi e Strutture Dati</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 			</table>
 		  </div>
@@ -330,12 +365,12 @@
 
 				<tr>
 					<td>SISTEMI OPERATIVI</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
 					<td>SISTEMI INFORMATIVI</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
@@ -345,12 +380,12 @@
 
 				<tr>
 					<td>BASI DI DATI</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
 					<td>CALCOLO NUMERICO</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
@@ -360,7 +395,7 @@
 
 				<tr>
 					<td>LABORATORIO DI ALGORITMI E STRUTTURE DATI</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
@@ -419,7 +454,7 @@
 
 <footer>
 <div style="height: 2px;"></div>
-<p>&copy; 2021 Dennis Turco</p>
+<p>&copy; 2022 Dennis Turco</p>
 <i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
 <br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
 <table align="center">
