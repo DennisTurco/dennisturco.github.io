@@ -1,5 +1,3 @@
-<?php include 'file.php'; ?>
-
 <html>
 
 <head>
@@ -19,6 +17,7 @@
 </head>
 
 <body>
+<?php include 'file.php'; ?>
 <button onclick="myFunction()" class="setting">Opzioni</button> <!--Bottone in basso a sinistra-->
 <div id="myDropdown" class="setting-content">
     <table>

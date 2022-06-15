@@ -436,6 +436,7 @@ li a:hover {
 .AndroidStudio {animation: loadjava ease 4s; width: 70%; background-color: #28cf36;}
 .SQL {animation: loadjava ease 4s; width: 80%; background-color: #00a135;}
 .MATLAB {animation: loadmatlab ease 4s; width: 65%; background-color: #28cf36;}
+.TeX {animation: loadtex ease 4s; width: 10%; background-color: rgb(224, 92, 15);}
 @keyframes loadcpp{
 	0%{
 		width: 0%; background-color: #31b83d;
@@ -541,6 +542,15 @@ li a:hover {
 	}
 	100%{
 		width: 65%; background-color: #28cf36;
+	}
+}
+
+@keyframes loadtex{
+	0%{
+		width: 0%; background-color: #31b83d;
+	}
+	100%{
+		width: 10%; background-color: rgb(224, 92, 15);
 	}
 }
 

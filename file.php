@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submitButton'])){
+  if(isset($_POST['submitButton'])){
   
     // the message
     $msg = "Nome: " . $_POST['nome_input'] . "\n" . "Cognome: " . $_POST['cognome_input'] . "\n\n" . $_POST['messaggio_input'];
@@ -21,4 +21,4 @@ if(isset($_POST['submitButton'])){
     //alet -- conferma invio
     echo '<script>alert("Messaggio Inviato!")</script>';
   }
-  ?>
+?>
