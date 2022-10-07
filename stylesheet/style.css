@@ -15,11 +15,6 @@ body{
 	
 }
 
-a{
-	text-decoration: none;
-	color: rgb(211, 187, 187);
-}
-
 h1{
     text-align: center;
 	font-family: Georgia, serif;
@@ -33,6 +28,33 @@ strong{
 	font-family: Georgia, serif;
 }
 
+a {
+	position: relative;
+	color: rgb(211, 187, 187);
+	text-decoration: none;
+}
+  
+a:hover {
+	transition: 0.5s;
+	color: rgb(117, 107, 107);
+}
+
+a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(117, 107, 107);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+a:hover::before {
+	transform: scaleX(1);
+}
 
 /*--------------------------------------
 |	             NAVBAR				   |
@@ -145,7 +167,7 @@ li a:hover {
 /*--------------------------------------
 |	              Titles			   |
 ----------------------------------------*/
-#who, #study, #work, #skills{
+#who, #study, #work, #projects{
 	margin-top: 400px;
 }
 
@@ -405,153 +427,19 @@ li a:hover {
 }
 
 /*--------------------------------------
-|	             skills bar			   |
+|	             projects bar		   |
 ----------------------------------------*/
-.contenitore{
-	width: 80%; 
-	margin: auto;
+#projects table {
+	padding: 10px;
 }
 
-.skills {
-	text-align: right; /* Right-align text */
-	font-family: Georgia;
-	padding-top: 2px; /* Add top padding */
-	padding-bottom: 2px; /* Add bottom padding */
-	color: white; /* White text color */
-	padding-right: 10px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+#projects td {
+	padding: 15px 5px 5px 10px;
+	text-align: center;
 }
 
-.Cpp {animation: loadcpp ease 4s; width: 85%; background-color: #00a135;}
-.C { animation: loadc ease 4s; width: 85%; background-color: #00a135;}
-.CS {animation: loadcs ease 4s; width: 60%; background-color: #28cf36;}
-.HTML  {animation: loadhtml ease 4s; width: 80%; background-color: #00a135;}
-.CSS {animation: loadcss ease 4s; width: 65%; background-color: #28cf36;}
-.JavaScript {animation: loadjavascript ease 4s; width: 20%; background-color: rgb(216, 132, 22);}
-.Photoshop {animation: loadphotoshop ease 4s; width: 50%; background-color: rgb(194, 224, 25);}
-.VideoEditing {animation: loadvideoediting ease 4s;width: 65%; background-color: #28cf36;}
-.MusicCreating {animation: loadmusiccreating ease 4s; width: 25%; background-color: rgb(216, 132, 22);}
-.Java {animation: loadjava ease 4s; width: 75%; background-color: #00a135;}
-.AndroidStudio {animation: loadjava ease 4s; width: 70%; background-color: #28cf36;}
-.SQL {animation: loadjava ease 4s; width: 80%; background-color: #00a135;}
-.MATLAB {animation: loadmatlab ease 4s; width: 65%; background-color: #28cf36;}
-.TeX {animation: loadtex ease 4s; width: 10%; background-color: rgb(224, 92, 15);}
-@keyframes loadcpp{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 85%; background-color: #31b83d;
-	}
-}
-@keyframes loadc{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 85%; background-color: #31b83d;
-	}
-}
-@keyframes loadcs{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 60%; background-color: #28cf36;
-	}
-}
-@keyframes loadhtml{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 80%; background-color: #31b83d;
-	}
-}
-@keyframes loadcss{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 65%; background-color: #28cf36;
-	}
-}
-@keyframes loadjavascript{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 20%; background-color: rgb(216, 132, 22);
-	}
-}
-@keyframes loadphotoshop{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 50%; background-color: rgb(194, 224, 25);
-	}
-}
-@keyframes loadvideoediting{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 65%; background-color: #28cf36;
-	}
-}
-@keyframes loadmusiccreating{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 25%; background-color: rgb(216, 132, 22);
-	}
-}
-@keyframes loadjava{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 75%; background-color: #28cf36;
-	}
-}
-
-@keyframes loadAndroidStudio{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 70%; background-color: #28cf36;
-	}
-}
-
-@keyframes loadsql{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 80%; background-color: #28cf36;
-	}
-}
-
-@keyframes loadmatlab{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 65%; background-color: #28cf36;
-	}
-}
-
-@keyframes loadtex{
-	0%{
-		width: 0%; background-color: #31b83d;
-	}
-	100%{
-		width: 10%; background-color: rgb(224, 92, 15);
-	}
+#projects p {
+	padding-top: 20px;
 }
 
 /*--------------------------------------
