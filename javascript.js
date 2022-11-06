@@ -52,7 +52,7 @@ javascript.js
 
 
 //Esami Universitari
-	function openCity(evt, cityName) {
+	function ANNOSCOLASTICO(evt, cityName) {
 	  var i, tabcontent, tablinks;
 	  tabcontent = document.getElementsByClassName("tabcontent");
 	  for (i = 0; i < tabcontent.length; i++) {
