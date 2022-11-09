@@ -443,8 +443,13 @@ li a:hover {
 }
 
 #wakatime_figure {
-	width: 50%;
-	height: 50%;
+	padding: 10px;
+	width: 650px;
+	height: 650px;
+}
+
+#wakatime_figure embed {
+	border-radius: 30px;
 }
 
 /*--------------------------------------
@@ -672,6 +677,13 @@ footer img:hover{
 /*--------------------------------------
 |	   Visualizzazione da telefono	   |
 ----------------------------------------*/
+@media only screen and (max-width: 720px) {
+	#wakatime_figure {
+		width: 500px;
+		height: 500px;
+	}
+}
+
 @media only screen and (max-width: 620px) {
 	/* For mobile phones: */
 	footer, table{
@@ -686,6 +698,12 @@ footer img:hover{
 	.tab, .tabcontent{
 		width: 400px;
 	}
+
+	#wakatime_figure {
+		width: 400px;
+		height: 400px;
+	}
+
 }
 @media only screen and (max-width: 436px) {
 	/* For mobile phones: */
@@ -698,6 +716,10 @@ footer img:hover{
 	.tab, .tabcontent{
 		width: 350px;
 	}
+	#wakatime_figure {
+		width: 350px;
+		height: 350px;
+	}
 }
 @media only screen and (max-width: 376px) {
 	/* For mobile phones: */
@@ -709,5 +731,10 @@ footer img:hover{
 	}
 	.tab, .tabcontent{
 		width: 300px;
+	}
+
+	#wakatime_figure {
+		width: 270px;
+		height: 270px;
 	}
 }
