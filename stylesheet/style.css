@@ -449,7 +449,7 @@ li a:hover {
 }
 
 #wakatime_figure embed {
-	border-radius: 30px;
+	border-radius: 20px;
 }
 
 /*--------------------------------------
@@ -720,6 +720,9 @@ footer img:hover{
 		width: 350px;
 		height: 350px;
 	}
+	#wakatime_figure embed {
+		border-radius: 10px;
+	}
 }
 @media only screen and (max-width: 376px) {
 	/* For mobile phones: */
@@ -736,5 +739,8 @@ footer img:hover{
 	#wakatime_figure {
 		width: 270px;
 		height: 270px;
+	}
+	#wakatime_figure embed {
+		border-radius: 7px;
 	}
 }
