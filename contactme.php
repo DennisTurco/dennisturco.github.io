@@ -8,11 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Serve per la visualizzazione da mobile-->
 <title>Dennis Turco</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-<link rel="icon" href="immagini/icona.ico"/>  <!--Icona della pagina web-->
-<link rel="stylesheet" href="stylesheet/bootstrap.min.css"/> <!--incorporo bootstrap-->
+<link rel="icon" href="img/icona.ico"/>  <!--Icona della pagina web-->
+<link rel="stylesheet" href="style/bootstrap.min.css"/> <!--incorporo bootstrap-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Script per permettere l'hover on scroll-->
-<link rel="stylesheet" href="stylesheet/style.css"/>
-<link rel="stylesheet" href="stylesheet/contact_style.css"/>
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/contact_style.css"/>
 
 </head>
 
@@ -70,13 +70,13 @@
     <br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
     <table align="center">
         <tr>
-            <td style="border: none; width: 40px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img src="immagini/skype.png"></a></td>
+            <td style="border: none; width: 40px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img src="img/skype.png"></a></td>
             <td width="10px"></td>
-            <td style="border: none; width: 50px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img src="immagini/instagram.png"></a></td>
+            <td style="border: none; width: 50px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img src="img/instagram.png"></a></td>
             <td width="5px"></td>
-            <td style="border: none; width: 60px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img src="immagini/github.png"></a></td>
+            <td style="border: none; width: 60px;"><a href="https://github.com/Mr-Denno?tab=repositories" target="blank" title="github"><img src="img/github.png"></a></td>
             <td width="5px"></td>
-            <td style="border: none; width: 40px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img src="immagini/discord.png"></a></td>
+            <td style="border: none; width: 40px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img src="img/discord.png"></a></td>
         </tr>
     </table>
 </footer>

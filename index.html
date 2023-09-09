@@ -27,10 +27,11 @@ function googleTranslateElementInit() {
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Serve per la visualizzazione da mobile-->
 <title>Dennis Turco</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-<link rel="icon" href="immagini/icona.ico"/>  <!--Icona della pagina web-->
-<link rel="stylesheet" href="stylesheet/bootstrap.min.css"/> <!--incorporo bootstrap-->
+<link rel="icon" href="img/icona.ico"/>  <!--Icona della pagina web-->
+<link rel="stylesheet" href="style/bootstrap.min.css"/> <!--incorporo bootstrap-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Script per permettere l'hover on scroll-->
-<link rel="stylesheet" href="stylesheet/style.css"/>
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="home">
@@ -72,7 +73,7 @@ function googleTranslateElementInit() {
 </ul>
 
 <div id="main">
-<h1 id="nome">Dennis Turco</h1><center><img src="immagini/foto.jpg" id ="imageGallery"></center>
+<h1 id="nome">Dennis Turco</h1><center><img src="img/photo.png" id ="imageGallery"></center>
 </div>
 
 <span id="who_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
@@ -95,7 +96,7 @@ function googleTranslateElementInit() {
 <span id="work_link"></span> <!--Utilizzo questo punto come riferimento dalla navbar-->
 <div id="work" data-aos="fade-down">
 	<h1 id="title"><i class="material-icons" title="carriera">work</i>  Carriera</h1>
-	<center><a href="documenti/curriculum.pdf" title="curriculum vitae" target="blank"><i class="material-icons">file_download</i>Curriculum Vitae (ultima modifica 2020)</a>
+	<center><a href="doc/curriculum.pdf" title="curriculum vitae" target="blank"><i class="material-icons">file_download</i>Curriculum Vitae (ultima modifica 2023)</a>
 	<div style="height: 50px;"></div>
 	<div class="container">
 		<div class="main-timeline">
@@ -259,8 +260,8 @@ function googleTranslateElementInit() {
 <div id="study" data-aos="fade-down">
 	<h1> <i class="material-icons" title="Percorso di studio">school</i> Percorso di Studio</h1>
 	
-		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità  </strong> <a href="documenti/diploma.pdf" title="diploma" style="color: red;"><i class="material-icons">file_download</i></a></center><p></p>
-		<!--<center><a href="documenti/diploma.pdf" target="blank" style="color: red;"><i class="material-icons">picture_as_pdf</i> Download</a></center>-->
+		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esame di Maturità  </strong> <a href="doc/diploma.pdf" title="diploma" target="blank" style="color: red;"><i class="material-icons">file_download</i></a></center><p></p>
+		<!--<center><a href="doc/diploma.pdf" target="blank" style="color: red;"><i class="material-icons">picture_as_pdf</i> Download</a></center>-->
 
 		<center><strong style="font-size: 20px; font-family: comic sans ms; color: rgb(190, 147, 147);">Esami Universitari</strong></center><p></p>
 		
@@ -409,7 +410,7 @@ function googleTranslateElementInit() {
 
 				<tr>
 					<td>Intelligenza Artificiale</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 
 				<tr>
@@ -424,7 +425,7 @@ function googleTranslateElementInit() {
 
 				<tr>
 					<td>Tirocinio</td>
-					<td><center><i class="material-icons" style="color: red;">do_disturb_alt</i></center></td>
+					<td><center><i class="material-icons" style="color: green;">check_circle</i></center></td>
 				</tr>
 			</table>
 		  </div>
@@ -437,14 +438,14 @@ function googleTranslateElementInit() {
 <i class="material-icons">phone</i> Tel: <a href="tel:+393421666192">+39 3421666192</a>   |   <i class="material-icons">email</i> Email: <a href="mailto:dennisturco@gmail.com">dennisturco@gmail.com</a>
 <br><i class="material-icons">location_on</i> Posizione: <a href="https://www.google.it/maps/place/43036+Fidenza+PR/@44.8612438,10.0520697,14z/data=!3m1!4b1!4m5!3m4!1s0x47805e2460c27007:0x896e3cfd8d45d0e3!8m2!3d44.866279!4d10.0615953" target="blank">Fidenza (Provincia di Parma)</a>
 <table align="center">
-	<tr>
-		<td style="border: none; width: 40px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img src="immagini/skype.png"></a></td>
+	<tr >
+		<td style="border: none; width: 50px; padding: 5px;"><a href="https://https://join.skype.com/invite/O3cCGY3NeWGg" target="blank" title="skype"><img src="img/skype.svg"></img></td>
 		<td width="10px"></td>
-		<td style="border: none; width: 50px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img src="immagini/instagram.png"></a></td>
-		<td width="5px"></td>
-		<td style="border: none; width: 60px;"><a href="https://github.com/DennisTurco?tab=repositories" target="blank" title="github"><img src="immagini/github.png"></a></td>
-		<td width="5px"></td>
-		<td style="border: none; width: 40px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img src="immagini/discord.png"></a></td>
+		<td style="border: none; width: 50px; padding: 5px;"><a href="https://www.instagram.com/dennis_turco/" target="blank" title="instagram"><img src="img/instagram.svg"></a></td>
+		<td width="10px"></td>
+		<td style="border: none; width: 50px; padding: 5px;"><a href="https://github.com/DennisTurco?tab=repositories" target="blank" title="github"><img src="img/github.svg"></a></td>
+		<td width="10px"></td>
+		<td style="border: none; width: 50px; padding: 5px;"><a href="https://discord.com/invite/kbZVz3m" target="blank" title="discord"><img src="img/discord.svg"></a></td>
 	</tr>
 	</table>
 </footer>

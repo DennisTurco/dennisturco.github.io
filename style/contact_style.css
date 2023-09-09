@@ -1,0 +1,85 @@
+input{
+    border: 2px solid rgb(128, 128, 128);
+    opacity: 0.8;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-left: 20px;
+}
+
+input[type=text]{
+    margin-left: 20px;
+}
+
+input[type=submit]{
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: white;
+    color: #555555;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia;
+    margin: 20px;
+    padding: 5px 5px;
+    transition: 1s;
+    width: 150px;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #555555;
+    color: white;
+    transition: 1s;
+}
+
+input:focus {
+    opacity: 1;
+    border: 2px solid #555;  
+}
+
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+label{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#messaggio{
+    width: 450px; 
+    height: 700px; 
+    background-color: #cfcccc; 
+    border: 1px solid black; 
+    margin-top: 20px; 
+    margin: auto; /*serve a centrare il div*/
+    border-radius: 10px;
+}
+
+#back{
+    margin: 80px; border:  1px solid black; width: 80px; position: absolute; border-radius: 10px;
+}
+
+@media only screen and (max-width: 820px) {
+	/* For mobile phones: */
+	#back{
+        position: relative;	
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	/* For mobile phones: */
+	#messaggio{
+		width: 100%;
+	}
+}
