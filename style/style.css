@@ -59,7 +59,7 @@ a:hover::before {
 /*--------------------------------------
 |	             NAVBAR				   |
 ----------------------------------------*/
-ul {
+nav ul {
 	width: 100%;
 	list-style-type: none;
 	margin: 0;
@@ -75,23 +75,23 @@ ul {
 	z-index: 1;
 	transition: 0.5s;
 }
-ul:hover{
+nav ul:hover{
 	opacity: 1;
 	transition: 0.5s;
 	filter: blur(0px);
 	-webkit-filter: blur(0px); /* Safari */
 	
 }
-li {
+nav li {
  	float: left;
 }
-li a {
+nav li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 16px 18px;
 }
-li a:hover {
+nav li a:hover {
 	transition: 1s;
 	background-color: #111;
 	filter: blur(0px);
