@@ -516,8 +516,8 @@ nav li a:hover {
 #myBtn {
 	display: none;
 	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	bottom: 100px;
+	right: 25px;
 	z-index: 1;
 	font-size: 18px;
 	border: none;
