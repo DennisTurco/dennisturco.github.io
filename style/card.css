@@ -1,0 +1,134 @@
+.card-container {
+    border: none;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    margin: auto;
+}
+.card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25), 0 6px 6px rgba(255, 255, 255, 0.22);
+}
+.hero-image {
+    width: 50%;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.main-content h1 {
+    font-size: 1.25rem;
+}
+.main-content p {
+    color: #6c757d;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.coin-base, .time-left {
+    display: flex;
+    align-items: center;
+}
+.small-image {
+    width: 1rem;
+    margin-right: .5rem;
+}
+.card-attribute {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dee2e6;
+    padding-top: .75rem;
+    margin-top: 1rem;
+}
+.small-avatar {
+    width: 2rem;
+    margin-right: .5rem;
+}
+.attribution {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
+    background-color: rgb(63, 58, 58);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.coin-base, .time-left, .card-attribute {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.card-attribute {
+    padding-bottom: 1.5em;
+    border-top: 2px solid var(--var-line-dark);
+}
+
+a.hero-image-container {
+    position: relative;
+    display: block;
+}
+
+
+
+/* Details */
+
+img.eye {
+    position: absolute;
+    width: 100%;
+    max-width: 2em;
+    top: 44%;
+    left: 43%;
+}
+
+@media (min-width:400px) {
+  img.eye {
+    max-width: 3em;
+}
+}
+
+.hero-image-container::after {
+    content: '';
+    background-image: url("https://i.postimg.cc/9MtT4GZY/view.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.hero-image-container:hover::after {
+  opacity: 1;
+}
+
+.small-image {
+    width: 1.2em;
+    margin-right: .5em;
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+}

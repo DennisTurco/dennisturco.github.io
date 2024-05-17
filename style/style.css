@@ -624,57 +624,6 @@ nav li a:hover {
 }
 
 /*--------------------------------------
-|	              Footer			   |
-----------------------------------------*/
-footer{
-	height: 180px;	
-	bottom: 0px;
-	width: 100%;
-	background-color: #333;
-	color: white;
-	text-align: center;
-	position: static;
-	margin-top: 300px;
-	z-index: 1;
-}
-footer img{
-	transition: 1s;
-	opacity: 0.8;
-	position: relative;
-	max-width: 100%;
-	height: auto;
-}
-footer img:hover{
-	transition: 1s;
-	opacity: 1;
-	transform: scale(1.1);
-}
-
-/* width */
-::-webkit-scrollbar {
-	width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: #f1f1f1; 
-	border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: #888; 
-	border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: #555;
-	
-  }
-
-
-/*--------------------------------------
 |	   Visualizzazione da telefono	   |
 ----------------------------------------*/
 @media only screen and (max-width: 720px) {
@@ -686,7 +635,7 @@ footer img:hover{
 
 @media only screen and (max-width: 620px) {
 	/* For mobile phones: */
-	footer, table{
+	table{
 	  	position: static;
 	}
 	li a{
