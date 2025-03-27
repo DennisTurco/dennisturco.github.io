@@ -1,16 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dennis Turco - Portfolio
 
-## Getting Started
+This is a website that i designed and created for:
+- tell who I am;
+- describe all my personal work experiences;
+- describe my studies;
+- link my main projects;
+- link social media where you can find me;
 
-First, run the development server:
 
-```bash
-npm run dev
-```
+## Licence
 
-* Packages To install:
-    * `npm install next-sitemap`
-    * `npm install @emailjs/browser`
-    * `npm install react-hook-form`
-    * `npm install emailjs-com`
-    * `npm install lucide-react`
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## Authors
+
+- [@DennisTurco](https://www.github.com/DennisTurco)
+
+
+## Support
+
+For support, email: dennisturco@gmail.com
