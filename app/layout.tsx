@@ -113,12 +113,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {children}
 
         {/* Buy Me a Coffee */}
-        <div id="buy-me-coffee-container">
+        {/* <div id="buy-me-coffee-container">
           <script data-name="BMC-Widget" data-cfasync="false"
             src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="denno"
             data-description="Support me on Buy me a coffee!" data-message="Buy me a coffè" data-color="#FF813F"
             data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-        </div>
+        </div> */}
 
         {/* Vercel Analytics */}
         {/* <Analytics /> */}
