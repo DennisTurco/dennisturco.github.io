@@ -45,7 +45,7 @@ const HeroPortfolio = () => {
           </p>
 
           <p className={styles.description}>
-            Sono laureato in <strong>Informatica</strong> presso l'<strong>Università di Parma</strong>.  
+            Sono laureato in <strong>Informatica</strong> presso l&apos;<strong>Università di Parma</strong>.  
             Ho una grande passione per la tecnologia e una costante voglia di imparare ed esplorare nuove sfide.  
             Amo lavorare in team, ma sono anche perfettamente in grado di lavorare in autonomia.
           </p>
