@@ -1,0 +1,90 @@
+// --project-title: var(--light);
+// --project-description: var(--light-alternative);
+// --project-card-bg: var(--background-alternative2);
+
+
+@use "resolution" as *;
+
+.projectsSection {
+  padding: 60px 20px;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 45px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--project-card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.3s ease;
+  text-align: left;
+  min-height: 450px; // Aumenta l'altezza minima della card per evitare che appaia troppo schiacciata
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.image {
+  width: 100%;
+  height: 260px; // Aumenta l'altezza per un look più proporzionato
+  object-fit: cover;
+}
+
+.content {
+  flex-grow: 1; // Permette al contenuto di espandersi naturalmente
+  padding: 30px; // Maggiore padding per una migliore leggibilità
+
+  p {
+    color: var(--project-description);
+  }
+  a {
+    color: var(--project-title);
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--project-description);
+  margin-top: auto; // Questo fa in modo che `details` venga sempre spinto verso il basso
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.1); // Aggiunge un leggero sfondo per evidenziarlo meglio
+  border-top: 1px solid rgba(255, 255, 255, 0.1); // Linea di separazione per migliorarne la leggibilità
+}
+
+
+.attribution {
+  margin-top: 30px;
+  font-size: 16px;
+  color: var(--light);
+}
+
+.attribution a {
+  color: var(--accent);
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--primary);
+  }
+}

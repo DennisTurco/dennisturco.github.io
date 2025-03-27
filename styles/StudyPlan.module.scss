@@ -1,0 +1,126 @@
+@use "resolution" as *;
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 80px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.diploma a{
+  font-size: 18px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: rgb(190, 147, 147);
+}
+
+.diploma i {
+  color: red;
+}
+
+.studyPlan {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  background: var(--background-alternative);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow);
+  color: var(--light);
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 8px;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: var(--background);
+  color: var(--light);
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.tabButton:hover {
+  background: var(--primary);
+}
+
+.active {
+  background: var(--accent);
+  color: var(--dark);
+}
+
+.tabContent {
+  display: none;
+  margin-top: 1rem;
+}
+
+.tabContent.active {
+  display: block;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--background);
+
+  td {
+    padding: 10px;
+  }
+  th {
+    padding: 5px;
+  }
+}
+
+
+
+/* Alternanza colori righe */
+.rowEven {
+  background-color: rgba(255, 255, 255, 0.05);
+
+}
+
+.rowOdd {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tick centrato */
+.checkIcon {
+  text-align: center;
+  color: #4caf50;
+}

@@ -1,0 +1,157 @@
+// Importo i font da Google
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Fraunces:wght@900&display=swap");
+
+// Uso Tailwind per base, componenti e utilities
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Definizione delle variabili globali
+:root {
+  // === Palette Base ===
+  --primary: #e06c29; 
+  --accent: #e06c29; 
+  --background: #333333; 
+  --background-alternative: #2a2a2a; 
+  --background-alternative2: #3f3a3a; 
+  --foreground: #11111b;
+  --light: #ffffff; 
+  --light-alternative: #747a80;
+  --shadow: rgba(0, 0, 0, 0.1); 
+  
+
+  /* === Navbar === */
+  --navbar-bg: var(--background-alternative);
+  --navbar-text: var(--light);
+  --navbar-shadow: var(--shadow);
+
+  /* === Hero Section === */
+  --hero-bg: var(--primary);
+  --hero-text: var(--foreground);
+  --hero-button-bg: var(--accent);
+  --hero-button-hover: var(--primary);
+  --hero-button-text: var(--light);
+  --hero-button-shadow: var(--shadow);
+  --hero-scroll-arrow: var(--light);
+
+  /* === Projects === */
+  --project-title: var(--light);
+  --project-description: var(--light-alternative);
+  --project-card-bg: var(--background-alternative2);
+
+  /* === About Us === */
+  --about-bg: var(--background);
+  --about-title: var(--foreground);
+  --about-text: var(--foreground);
+
+  /* === Chiamami Button === */
+  --chiamami-bg: #4CAF50;
+  --chiamami-text: var(--light);
+  --chiamami-bg-hover: #45a049;
+
+  /* === Footer === */
+  --footer-bg: var(--background-alternative);
+  --footer-text: var(--light);
+  --footer-links: var(--light);
+  --footer-links-hover: var(--accent);
+
+  /* === Copyright === */
+  --copyright-bg: rgba(255, 255, 255, 0.1);
+  --copyright-link: var(--accent);
+
+  /* === Typography === */
+  --xl-header-fs: 40px;
+  --md-header-fs: 28px;
+  --xs-header-fs: 24px;
+  --lg-body-fs: 16px;
+  --md-body-fs: 15px;
+  --sm-link-fs: 12px;
+
+  --page-margin: 24px;
+  --page-container: 1200px;
+  --media-tablet: 768px;
+  --media-desktop: 1140px;
+
+  // Media queries
+  @media (min-width: var(--media-tablet)) {
+    --xl-header-fs: 48px;
+    --md-header-fs: 32px;
+    --xs-header-fs: 24px;
+    --page-margin: 100px;
+  }
+
+  @media (min-width: 1140px) {
+    --xl-header-fs: 72px;
+    --md-header-fs: 40px;
+    --md-body-fs: 16px;
+    --page-margin: 10px;
+  }
+}
+
+// Reset generale e box-sizing
+* {
+  -webkit-font-smoothing: antialiased; /* Safari */
+  -moz-osx-font-smoothing: grayscale; /* Safari */
+  box-sizing: border-box;
+}
+
+// Corpo della pagina
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+
+// Stili generali per testo
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-family: 'Fraunces', serif;
+}
+
+h1 {
+  font-size: var(--xl-header-fs);
+  color: var(--primary);
+}
+
+h2 {
+  font-size: var(--md-header-fs);
+}
+
+h3 {
+  font-size: var(--xs-header-fs);
+}
+
+p, .nav-link, a {
+  font-family: 'Barlow', sans-serif;
+  font-size: var(--lg-body-fs);
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: bold;
+}
+
+// Link
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--sm-link-fs);
+  letter-spacing: 1px;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+// Stili per il footer
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 30px;
+  
+  a {
+    color: var(--footer-links);
+    &:hover {
+      color: var(--footer-links-hover);
+    }
+  }
+}

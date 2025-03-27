@@ -1,0 +1,145 @@
+@use "resolution" as *;
+
+$primary-color: #4a90e2;
+$text-color: #333;
+$background-color: #f9f9f9;
+$line-color: #ccc;
+
+.experienceSection {
+  padding: 80px 20px;
+  background-color: var(--background);
+  text-align: center;
+
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: $line-color;
+      transform: translateX(-50%);
+    }
+
+    .timelineItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      margin-bottom: 40px;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      .date {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: $primary-color;
+
+        .year {
+          font-size: 20px;
+          display: block;
+        }
+
+        .duration {
+          font-size: 14px;
+          color: darken($primary-color, 20%);
+        }
+      }
+
+      .content {
+        flex: 2;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        position: relative;
+        max-width: 400px;
+
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+          color: $text-color;
+          margin-bottom: 5px;
+        }
+
+        h4 {
+          font-size: 18px;
+          color: darken($text-color, 20%);
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: lighten($text-color, 10%);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+// Responsive per schermi più piccoli
+@media (max-width: 768px) {
+  .timeline {
+    &:before {
+      left: 20px;
+    }
+
+    .timelineItem {
+      flex-direction: column !important;
+      align-items: flex-start;
+      margin-bottom: 30px;
+
+      .date {
+        text-align: left;
+        margin-bottom: 10px;
+
+        .year {
+          font-size: 18px;
+        }
+
+        .duration {
+          font-size: 14px;
+        }
+      }
+
+      .content {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+.cv a{
+  font-size: 18px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: rgb(190, 147, 147);
+}
+
+.cv i {
+  color: red;
+}

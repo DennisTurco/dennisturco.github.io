@@ -1,0 +1,18 @@
+@use "resolution" as *;
+
+.button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: var(--chiamami-bg);
+    color: var(--chiamami-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--chiamami-bg-hover);
+    }
+}

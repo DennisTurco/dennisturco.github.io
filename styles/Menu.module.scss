@@ -1,0 +1,104 @@
+@use "resolution" as *;
+
+.menuSection {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: var(--xl-header-fs);
+  font-weight: 700;
+  color: var(--menu-title);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--menu-card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px var(--menu-card-shadow);
+  position: relative;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0px 15px;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.name {
+  font-size: var(--md-header-fs);
+  font-weight: bold;
+  margin: 0;
+  color: var(--menu-card-title);
+}
+
+.description {
+  font-size: var(--md-body-fs);
+  color: var(--menu-description);
+  margin: 5px 0px;
+}
+
+.price {
+  font-size: var(--md-body-fs);
+  font-weight: bold;
+  color: var(--menu-price);
+}
+
+.allergens {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 18px;
+  opacity: 0.7;
+  color: var(--menu-card-subtitle);
+}
+
+.allergenLegend {
+  margin-top: 40px;
+  background: var(--menu-allergen-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px var(--menu-allergen-shadow);
+}
+
+.legendTitle {
+  font-size: var(--lg-header-fs);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.legendItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.legendItem span {
+  font-size: 24px;
+}
