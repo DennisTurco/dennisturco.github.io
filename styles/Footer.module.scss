@@ -8,6 +8,10 @@ $logo-size: 50px;
   padding: 50px 20px;
   color: var(--footer-text);
   font-family: 'Arial', sans-serif;
+
+  @media (max-width: $media-mobile) {
+    margin-top: 60px;
+  }
 }
 
 .footer {

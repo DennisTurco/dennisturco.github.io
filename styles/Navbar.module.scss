@@ -21,6 +21,10 @@
     filter: blur(0px);
     -webkit-filter: blur(0px); /* Safari */
   }
+
+  @media (max-width: $media-mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .navbar li {

@@ -55,10 +55,10 @@ const HeroPortfolio = () => {
 
           {/* Bottoni di navigazione */}
           <div className={styles.buttonGroup}>
-            <Link href="/carriera" className={styles.button}>📂 Carriera</Link>
-            <Link href="/progetti" className={styles.button}>💻 Progetti</Link>
-            <Link href="/studi" className={styles.button}>🎓 Studio</Link>
-            <Link href="/contact" className={styles.button}>📬 Contatti</Link>
+            <Link href="/carriera" className={styles.button}>Carriera</Link>
+            <Link href="/progetti" className={styles.button}>Progetti</Link>
+            <Link href="/studi" className={styles.button}>Studio</Link>
+            <Link href="/contact" className={styles.button}>Contatti</Link>
           </div>
         </div>
       </div>
