@@ -1,8 +1,3 @@
-// --project-title: var(--light);
-// --project-description: var(--light-alternative);
-// --project-card-bg: var(--background-alternative2);
-
-
 @use "resolution" as *;
 
 .projectsSection {
@@ -45,9 +40,10 @@
 }
 
 .image {
+  padding: 10px;
   width: 100%;
-  height: 260px; // Aumenta l'altezza per un look più proporzionato
-  object-fit: cover;
+  height: 200px; /* Riduci l'altezza per diminuire la dimensione */
+  object-fit: contain; /* Mostra l'immagine interamente senza ritagliarla */
 }
 
 .content {

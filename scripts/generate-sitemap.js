@@ -6,6 +6,7 @@ const baseUrl = "https://dennisturco.com";
 const pages = [
   "",
   "progetti",
+  "servizi",
   "carriera",
   "studi",
 ];

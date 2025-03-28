@@ -10,7 +10,7 @@ const projects = [
     "year": "2025"
   },
   {
-    "title": "Auto Backup Program",
+    "title": "Backup Manager",
     "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
     "image": "/images/projects/logo3.png",
     "link": "https://github.com/DennisTurco/AutoBackupProgram",

@@ -27,6 +27,13 @@ const Navbar = () => {
             </Link>
           </li>
         </div>
+        <div>
+          <li>
+            <Link href="/servizi">
+              <i className="material-icons" title="services">build</i>
+            </Link>
+          </li>
+        </div>
         <div className={styles.right}>
           <li>
             <Link href="mailto:dennisturco@gmail.com">

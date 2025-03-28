@@ -45,8 +45,10 @@ const HeroPortfolio = () => {
           </p>
 
           <p className={styles.description}>
-            Sono laureato in <strong>Informatica</strong> presso l&apos;<strong>Università di Parma</strong>.  
-            Ho una grande passione per la tecnologia e una costante voglia di imparare ed esplorare nuove sfide.  
+            Sono laureato in <strong>Informatica</strong> presso l&apos;<strong>Università di Parma</strong>. 
+            <br/> 
+            Ho una grande passione per la tecnologia e una costante voglia di imparare ed esplorare nuove sfide.
+            <br/>
             Amo lavorare in team, ma sono anche perfettamente in grado di lavorare in autonomia.
           </p>
 
@@ -57,6 +59,7 @@ const HeroPortfolio = () => {
           <div className={styles.buttonGroup}>
             <Link href="/carriera" className={styles.button}>Carriera</Link>
             <Link href="/progetti" className={styles.button}>Progetti</Link>
+            <Link href="/servizi" className={styles.button}>Servizi</Link>
             <Link href="/studi" className={styles.button}>Studio</Link>
             <Link href="mailto:dennisturco@gmail.com" target="_blank" className={styles.button}>CONTATTAMI</Link>
           </div>
