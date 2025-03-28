@@ -25,19 +25,19 @@ const Footer = () => {
             <h1 className={styles.contactsHeader}>CONTATTI</h1>
             <div className={styles.icons}>
               <Link href="https://discordapp.com/invite/kbZVz3m" target="_blank">
-                <Image src="/images/discord.png" alt="Discord" width={50} height={50} />
+                <Image src="/images/discord.svg" alt="Discord" width={50} height={50} />
               </Link>
               <Link href="https://www.linkedin.com/in/dennis-turco-751239232/" target="_blank">
-                <Image src="/images/l3.png" alt="LinkedIn" width={50} height={50} />
+                <Image src="/images/linkedin.svg" alt="LinkedIn" width={50} height={50} />
               </Link>
               <Link href="https://www.instagram.com/dennis_turco/" target="_blank">
-                <Image src="/images/instagram.png" alt="Instagram" width={50} height={50} />
+                <Image src="/images/instagram.svg" alt="Instagram" width={50} height={50} />
               </Link>
               <Link href="https://github.com/DennisTurco" target="_blank">
-                <Image src="/images/github.png" alt="GitHub" width={50} height={50} />
+                <Image src="/images/github.svg" alt="GitHub" width={50} height={50} />
               </Link>
               <Link href="mailto:dennisturco@gmail.com" target="_blank">
-                <Image src="/images/mail.png" alt="Email" width={50} height={50} />
+                <Image src="/images/mail.svg" alt="Email" width={50} height={50} />
               </Link>
             </div>
           </div>
