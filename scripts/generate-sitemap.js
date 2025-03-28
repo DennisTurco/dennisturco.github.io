@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const baseUrl = "https://dennisturco.github.io";
+const baseUrl = "https://dennisturco.com";
 
 const pages = [
   "",

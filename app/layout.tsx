@@ -15,8 +15,8 @@ export const metadata = {
     title: "Dennis Turco | Backend Developer & Insegnante",
     description:
       "Scopri il portfolio di Dennis Turco, sviluppatore backend esperto in Java e C#, e insegnante di programmazione.",
-    images: [{ url: "https://dennisturco.github.io/images/photo.png" }],
-    url: "https://dennisturco.github.io",
+    images: [{ url: "https://dennisturco.com/images/photo.png" }],
+    url: "https://dennisturco.com",
     type: "website",
   },
 };
@@ -27,9 +27,9 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Dennis Turco",
-  url: "https://dennisturco.github.io",
-  logo: "https://dennisturco.github.io/images/logo.webp",
-  image: "https://dennisturco.github.io/images/photo.png",
+  url: "https://dennisturco.com",
+  logo: "https://dennisturco.com/images/logo.webp",
+  image: "https://dennisturco.com/images/photo.png",
   description:
     "Sviluppatore backend esperto in Java e C#, con esperienza nell'insegnamento della programmazione.",
   telephone: "+39 342 166 6192",
