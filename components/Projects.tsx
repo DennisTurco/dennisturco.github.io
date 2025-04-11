@@ -1,11 +1,12 @@
 import styles from "@/styles/Projects.module.scss";
+import Image from "next/image";
 
 const projects = [
   {
     "title": "Fusa & Caffè",
     "description": "Sito web dinamico sviluppato in Next.js per permettere all'attività Fusa & Caffè di mostrare il proprio magico posto per bere un buon caffè in compagnia dei gatti.",
     "image": "https://www.fusacafe.it/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=75",
-    "link": "https://github.com/DennisTurco/",
+    "link": "https://www.fusacafe.it/",
     "languages": ["Typescript, SCSS"],
     "year": "2025"
   },
@@ -13,7 +14,7 @@ const projects = [
     "title": "Backup Manager",
     "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
     "image": "/images/projects/logo3.png",
-    "link": "https://github.com/DennisTurco/AutoBackupProgram",
+    "link": "https://github.com/DennisTurco/BackupManager",
     "languages": ["Java"],
     "year": "2022 - 2025"
   },
@@ -21,7 +22,7 @@ const projects = [
     "title": "Google Calendar Data Manager",
     "description": "Questo programma, con una semplice interfaccia grafica, ti permette di gestire gli eventi di Google Calendar in modo efficace.",
     "image": "/images/projects/logo2.png",
-    "link": "https://www.fusacafe.it/",
+    "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
     "languages": ["Python"],
     "year": "2023 - 2024"
   },
@@ -52,7 +53,15 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div key={index} className={styles.card}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img src={project.image} alt={project.title} className={styles.image} />
+            <div className={styles.imageWrapper}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className={styles.image}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             </a>
             <div className={styles.content}>
               <h3>
