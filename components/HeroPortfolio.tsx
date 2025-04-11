@@ -21,7 +21,7 @@ const HeroPortfolio = () => {
         >
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/photo.png"
+              src="/images/photo.webp"
               alt="Profilo"
               width={200}
               height={200}

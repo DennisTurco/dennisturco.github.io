@@ -13,7 +13,7 @@ const projects = [
   {
     "title": "Backup Manager",
     "description": "Questo programma con una moderna interfaccia grafica ti consente di eseguire automaticamente il backup di cartelle e sottocartelle.",
-    "image": "/images/projects/logo3.png",
+    "image": "/images/projects/logo3.webp",
     "link": "https://github.com/DennisTurco/BackupManager",
     "languages": ["Java"],
     "year": "2022 - 2025"
@@ -21,7 +21,7 @@ const projects = [
   {
     "title": "Google Calendar Data Manager",
     "description": "Questo programma, con una semplice interfaccia grafica, ti permette di gestire gli eventi di Google Calendar in modo efficace.",
-    "image": "/images/projects/logo2.png",
+    "image": "/images/projects/logo2.webp",
     "link": "https://github.com/DennisTurco/Calendar-Data-Manager",
     "languages": ["Python"],
     "year": "2023 - 2024"
@@ -29,7 +29,7 @@ const projects = [
   {
     "title": "Imparare Facile",
     "description": "Sito web dedicato alla pubblicazione di documentazione finalizzata a spiegare concetti di programmazione e matematica in modo chiaro e conciso.",
-    "image": "/images/projects/logo1.png",
+    "image": "/images/projects/logo1.webp",
     "link": "https://github.com/DennisTurco/ImparareFacile",
     "languages": ["HTML", "CSS"],
     "year": "2022 - 2024"
@@ -37,7 +37,7 @@ const projects = [
   {
     "title": "Minesweeper Game",
     "description": "Classico gioco del Campo Minato realizzato in Java.",
-    "image": "/images/projects/logo4.png",
+    "image": "/images/projects/logo4.webp",
     "link": "https://github.com/DennisTurco/Minesweeper-Game",
     "languages": ["Java"],
     "year": "2022"
