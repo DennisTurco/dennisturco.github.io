@@ -54,13 +54,13 @@ export default function Projects() {
           <div key={index} className={styles.card}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
             <div className={styles.imageWrapper}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className={styles.image}
-                style={{ objectFit: "cover" }}
-              />
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={400}
+              height={200}
+              className={styles.image}
+            />
             </div>
             </a>
             <div className={styles.content}>
