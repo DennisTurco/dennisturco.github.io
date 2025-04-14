@@ -40,7 +40,7 @@ const experiences = [
     title: "Insegnante Privato",
     company: "SuperProf",
     duration: "In corso",
-    year: "Dal 2021",
+    year: "2021 - Presente",
     description:
       "Fornisco lezioni private di Matematica e Programmazione.",
   },
@@ -91,8 +91,15 @@ const ExperienceSection = () => {
       </div>
 
       <div className={styles.cv}>
-          <a href="/doc/curriculum.pdf" title="degree" target="_blank">
+          <a href="/doc/curriculum.pdf" title="curriculum" target="_blank">
             <strong>Curriculum Vitae (ultima modifica 2025)</strong>
+            <i className="material-icons">file_download</i>
+          </a>
+      </div>
+
+      <div className={styles.cv}>
+          <a href="/doc/cisita.pdf" title="attestato" target="_blank">
+            <strong>Attestato Cisita 2024</strong>
             <i className="material-icons">file_download</i>
           </a>
       </div>

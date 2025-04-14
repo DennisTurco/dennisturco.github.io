@@ -41,7 +41,7 @@ const HeroPortfolio = () => {
 
           <p className={styles.description}>
             Ciao e benvenuto nella mia pagina web! <br />
-            Sono <strong>Dennis Turco</strong>, nato il <strong>04/08/2001</strong> a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.
+            Sono <strong>Dennis Turco</strong>, nato il <strong>08/04/2001</strong> a Fidenza (una piccola città in provincia di Parma, Italia), dove attualmente risiedo.
           </p>
 
           <p className={styles.description}>
