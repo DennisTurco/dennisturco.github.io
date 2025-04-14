@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/WorkExperience.module.scss";
+import Image from "next/image";
 
 const experiences = [
   {
@@ -78,6 +79,16 @@ const ExperienceSection = () => {
       <h2 className={styles.title}>
         <i className="material-icons" title="career">work</i> Carriera
       </h2>
+
+      <div className={styles.avatarWrapper}>
+        <Image
+          src="/images/action_figure.png" 
+          alt="Action Figure"
+          width={400}
+          height={500}
+          className={styles.avatar}
+        />
+      </div>
 
       <div className={styles.cv}>
           <a href="/doc/curriculum.pdf" title="degree" target="_blank">
